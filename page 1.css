@@ -194,7 +194,13 @@
     font-weight: 800;
 }
 
-#input1 {
+input.subscribe,
+input.email {
+    border-radius: 4px;
+    border: 0;
+}
+
+input.subscribe {
     float: left;
     height: 30px;
     font-size: 1em;
@@ -211,7 +217,11 @@
     left: 309.734375px;
 }
 
-#input {
+input.subscribe:hover {
+    border: 1px solid #fff;
+}
+
+input.email {
     float: left;
     height: 30px;
     font-size: 1em;
@@ -225,7 +235,7 @@
     color: rgb(130, 130, 130);
 }
 
-#Keep_me_in_the_loop_ {
+#mailchimp-form label {
     float: left;
     font-size: 0.9em;
     width: 51.048508%;
@@ -368,13 +378,13 @@
         left: 31.859375px;
     }
 
-    #input {
+    input.email {
         margin-top: 302.5px;
         margin-left: 27.546875px;
         clear: both;
     }
 
-    #input1 {
+    input.subscribe {
         top: 393.5px;
         left: 304.796875px;
     }
@@ -384,7 +394,7 @@
         left: 199.734375px;
     }
 
-    #Keep_me_in_the_loop_ {
+    #mailchimp-form label {
         top: 362.5px;
         left: 29.859375px;
     }
@@ -451,7 +461,7 @@
         background-repeat: no-repeat no-repeat;
     }
 
-    #Keep_me_in_the_loop_ {
+    #mailchimp-form label {
         clear: both;
         top: 377px;
         left: 22.75px;
@@ -484,7 +494,7 @@
         min-height: 26px;
     }
 
-    #input1 {
+    input.subscribe {
         top: 445px;
         left: 16.75px;
         width: 372.609375px;
@@ -519,7 +529,7 @@
         min-height: 158px;
     }
 
-    #input {
+    input.email {
         margin-top: 71px;
         margin-left: 17.75px;
         clear: none;
