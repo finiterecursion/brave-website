@@ -78,6 +78,7 @@ h2 ul li::before {
 	line-height: 1.25em;
 	color: #FFF;
 	margin-bottom: 50px;
+	max-width: 430px;
 }
 
 /*
