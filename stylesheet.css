@@ -20,7 +20,7 @@ body, html {
 #panel {
 	float: right;
 	margin: 100px 0 100px 0;
-	background: rgba(0, 108, 208, 0.83);
+	background-color: rgba(0,99,192,0.85);
 	width: 55%;
 	min-width: 500px;
 	padding: 80px 34px;
@@ -36,14 +36,15 @@ body, html {
 h1 {
 	font-family: Superclarendon;
 	font-size: 54.4px;
-	letter-spacing: -3px;
+	letter-spacing: -2px;
 	font-weight: normal;
 	margin: 0 0 30px;
 	padding: 0;
 }
 
 .muted {
-	color: rgba(255, 255, 255, 0.29)
+	color: rgba(255, 255, 255, 0.29);
+	margin-left: 5px;
 }
 
 h2 {
@@ -61,15 +62,23 @@ h2 .responsive {
 h2 ul {
 	list-style-type: none;
 	display: inline-block;
-	border: 2px solid #8DD748;
+	border: 2px solid #FFFFFF;
 	border-radius: 6px;
-	box-shadow: 2px 2px 3px 0px #000;
+	box-shadow: 1px 2px 7px 0px #000;
 	vertical-align: top;
-	margin: -15px 10px 0 7px;
-	padding: 5px 25px 8px 15px;
+	margin-top: -14px;
+	margin-right: 2px;
+	margin-left: 1px;
+	margin-bottom: 0;
+	padding-top: 6px;
+	padding-right: 28px;
+	padding-left: 15px;
+	padding-bottom: 8px;
 	font-size: 22px;
 	font-weight: 200;
 	line-height: 36px;
+	background-color: #2483D7;
+	-webkit-box-shadow: 1px 2px 7px 0px #000;
 }
 
 h2 ul li::before {
@@ -87,8 +96,10 @@ h2 ul li::before {
 	font-weight: 300;
 	line-height: 1.25em;
 	color: #FFF;
-	margin-bottom: 50px;
+	margin-bottom: 27px;
 	max-width: 430px;
+	margin-top: 78px;
+	letter-spacing: 0.01em;
 }
 
 /*
@@ -97,6 +108,7 @@ h2 ul li::before {
 #mailchimp-form label {
 	display: block;
 	line-height: 1.7rem;
+	max-width: 320px;
 }
 
 #mailchimp-form input.subscribe,
@@ -115,6 +127,8 @@ h2 ul li::before {
 	max-width: 100%;
 	margin-right: 10px;
 	margin-bottom: 10px;
+	margin-left: 0px;
+	text-indent: 10px;
 }
 
 #mailchimp-form input.subscribe {
@@ -139,11 +153,15 @@ footer {
 	color: #fff;
 	font-size: 0.9rem;
 	text-align: center;
+	margin-left: 111px;
 }
 
 footer span {
 	display: inline-block;
-	margin: 10px 20px;
+	margin-top: 10px;
+	margin-right: 136px;
+	margin-left: -38px;
+	margin-bottom: 10px;
 }
 
 footer .left {
@@ -157,18 +175,78 @@ footer .right {
 /*
  * For cell phones
  */
-@media only screen and (max-width: 480px) {
-	#panel {
-		width: 100%;
-		float: none;
-		min-width: auto;
+@media only screen and (max-width: 440px) {
+	
+#container {
+	width: 440px;
+	background-image: url("img/hikers.jpg");
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: -274px -352px;
+	overflow-x: hidden;
+	margin-bottom: -83px;
+}
+
+.clearfix {
+	overflow: auto;
+	zoom: 1;
+}
+
+#panel {
+	overflow: hidden;
+	float: left;
+	width: 200px;
+	margin-top: 157px;
+	max-height: 452px;
+	background-color: #0068BA;
 	}
+
+h1 {
+	font-family: Superclarendon;
+	font-size: 44px;
+	letter-spacing: -2px;
+	font-weight: normal;
+	margin-top: -51px;
+	margin-right: 0;
+	margin-left: 0;
+	margin-bottom: 30px;
+	padding: 0;
+	max-width: 340px;
+}
+
+h2 {
+	font-family: "Proxima Nova Light",Superclarendon;
+	font-size: 24px;
+	line-height: 1.1em;
+	font-family: Avenir;
+	color: #FFF;
+	font-weight: 400;
+	max-width: 300px;
+}
 
 	h2 ul {
 		display: none;
 	}
+	
+	.description {
+	font-size: 1em;
+	font-weight: 300;
+	line-height: 1.25em;
+	color: #FFF;
+	margin-bottom: 17px;
+	max-width: 330px;
+}
 
 	h2 .responsive {
 		display: inline;
 	}
+	
+	footer {
+	color: #fff;
+	font-size: 0.9rem;
+	text-align: left;
+	margin-left: 71px;
+}
+
+
 }

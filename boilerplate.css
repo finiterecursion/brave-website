@@ -51,7 +51,10 @@ body, button, input, select, textarea { font-family: helvetica, arial,"lucida gr
 
 a { color: #00e; }
 a:visited { color: #551a8b; }
-a:hover { color: #06e; }
+a:hover {
+	color: #06e;
+	text-decoration: underline;
+}
 a:focus { outline: thin dotted; }
 
 /* Improve readability when focused and hovered in all browsers: h5bp.com/h */
@@ -135,7 +138,10 @@ form { margin: 0; }
 fieldset { border: 0; margin: 0; padding: 0; }
 
 /* Indicate that 'label' will shift focus to the associated form element */
-label { cursor: pointer; }
+label {
+	cursor: pointer;
+	font-size: 14px;
+}
 
 /*
  * 1. Correct color not inheriting in IE6/7/8/9
