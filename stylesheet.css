@@ -177,70 +177,69 @@ footer .right {
  */
 @media only screen and (max-width: 440px) {
 	
-#container {
-	width: 440px;
-	background-image: url("img/hikers.jpg");
-	background-repeat: no-repeat;
-	background-size: cover;
-	background-position: -274px -352px;
-	overflow-x: hidden;
-	margin-bottom: -83px;
-}
-
-.clearfix {
-	overflow: auto;
-	zoom: 1;
-}
-
-#panel {
-	overflow: hidden;
-	float: left;
-	width: 200px;
-	margin-top: 157px;
-	max-height: 452px;
-	background-color: #0068BA;
+	#container {
+		width: 440px;
+		background-image: url("img/hikers.jpg");
+		background-repeat: no-repeat;
+		background-size: cover;
+		background-position: -274px -352px;
+		overflow-x: hidden;
+		margin-bottom: -83px;
 	}
 
-h1 {
-	font-family: Superclarendon;
-	font-size: 44px;
-	letter-spacing: -2px;
-	font-weight: normal;
-	margin-top: -51px;
-	margin-right: 0;
-	margin-left: 0;
-	margin-bottom: 30px;
-	padding: 0;
-	max-width: 340px;
-}
+	.clearfix {
+		overflow: auto;
+		zoom: 1;
+	}
 
-h2 {
-	max-width: 300px;
-}
+	#panel {
+		overflow: hidden;
+		float: left;
+		width: 200px;
+		margin-top: 157px;
+		max-height: 452px;
+		background-color: #0068BA;
+		}
+
+	h1 {
+		font-family: Superclarendon;
+		font-size: 44px;
+		letter-spacing: -2px;
+		font-weight: normal;
+		margin-top: -51px;
+		margin-right: 0;
+		margin-left: 0;
+		margin-bottom: 30px;
+		padding: 0;
+		max-width: 340px;
+	}
+
+	h2 {
+		max-width: 300px;
+	}
 
 	h2 ul {
 		display: none;
 	}
-	
+
 	.description {
-	font-size: 1em;
-	font-weight: 300;
-	line-height: 1.25em;
-	color: #FFF;
-	margin-bottom: 17px;
-	max-width: 330px;
-}
+		font-size: 1em;
+		font-weight: 300;
+		line-height: 1.25em;
+		color: #FFF;
+		margin-bottom: 17px;
+		max-width: 330px;
+	}
 
 	h2 .responsive {
 		display: inline;
 	}
-	
-	footer {
-	color: #fff;
-	font-size: 0.9rem;
-	text-align: left;
-	margin-left: 71px;
-}
 
+	footer {
+		color: #fff;
+		font-size: 0.9rem;
+		text-align: left;
+		margin-left: 71px;
+	}
 
 }
