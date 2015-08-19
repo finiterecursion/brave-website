@@ -22,6 +22,7 @@ body, html {
 	margin: 100px 0 100px 0;
 	background: rgba(0, 108, 208, 0.83);
 	width: 55%;
+	min-width: 500px;
 	padding: 80px 34px;
 	box-sizing: border-box;
 	overflow: hidden;
@@ -51,6 +52,10 @@ h2 {
 	font-family: Avenir;
 	color: #FFF;
 	font-weight: 400;
+}
+
+h2 .responsive {
+	display: none;
 }
 
 h2 ul {
@@ -107,7 +112,9 @@ h2 ul li::before {
 	border-color: rgba(255, 255, 255, 0.29);
 	color: #828282;
 	width: 300px;
+	max-width: 100%;
 	margin-right: 10px;
+	margin-bottom: 10px;
 }
 
 #mailchimp-form input.subscribe {
@@ -145,4 +152,23 @@ footer .left {
 
 footer .right {
 	color: #E1E1E1;
+}
+
+/*
+ * For cell phones
+ */
+@media only screen and (max-width: 480px) {
+	#panel {
+		width: 100%;
+		float: none;
+		min-width: auto;
+	}
+
+	h2 ul {
+		display: none;
+	}
+
+	h2 .responsive {
+		display: inline;
+	}
 }
