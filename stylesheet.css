@@ -37,7 +37,7 @@ h1 {
 	font-size: 54.4px;
 	letter-spacing: -3px;
 	font-weight: normal;
-	margin: 0;
+	margin: 0 0 30px;
 	padding: 0;
 }
 
@@ -46,11 +46,11 @@ h1 {
 }
 
 h2 {
-	font-size: 1.7em;
+	font-size: 24px;
 	line-height: 1em;
 	font-family: Avenir;
 	color: #FFF;
-	font-weight: 200;
+	font-weight: 400;
 }
 
 h2 ul {
@@ -60,16 +60,21 @@ h2 ul {
 	border-radius: 6px;
 	box-shadow: 2px 2px 3px 0px #000;
 	vertical-align: top;
-	margin: 0 10px 0 7px;
-	padding: 5px 5px 20px 10px;
+	margin: -15px 10px 0 7px;
+	padding: 5px 25px 8px 15px;
+	font-size: 22px;
+	font-weight: 200;
+	line-height: 36px;
 }
 
 h2 ul li::before {
-	content: '√';
+	content: '✓';
 	font-size: 0.5em;
+	font-weight: 700;
+	font-size: 22px;
 	position: relative;
-	top: -5px;
-	left: -5px;
+	top: 0;
+	left: -8px;
 }
 
 .description {
