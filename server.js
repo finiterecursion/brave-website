@@ -8,6 +8,13 @@ server.register(require('inert'), err => {
 		throw err;
 	}
 
+	server.route({
+		method: 'GET',
+		path: '/bo/{path*}',
+		handler: function (request, reply) {
+			reply.redirect('http://bravecombo.com/' + (request.params.path ? request.params.path : ''));
+		}
+	});
 
 	server.route({
 		method: 'GET',
