@@ -91,6 +91,10 @@ h2 ul li::before {
 	left: -8px;
 }
 
+a {
+	text-decoration: underline;
+}
+
 .description {
 	font-size: 1em;
 	font-weight: 300;
