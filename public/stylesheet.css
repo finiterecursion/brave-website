@@ -200,7 +200,7 @@ footer .right {
 		margin-top: 157px;
 		max-height: 452px;
 		background-color: #0068BA;
-		}
+	}
 
 	h1 {
 		font-family: Superclarendon;
@@ -212,6 +212,10 @@ footer .right {
 		margin-left: 0;
 		margin-bottom: 30px;
 		padding: 0;
+	}
+
+	h1,
+	#mailchimp-form {
 		max-width: 340px;
 	}
 
