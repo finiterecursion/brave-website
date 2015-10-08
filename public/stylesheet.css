@@ -34,12 +34,13 @@ body, html {
 }
 
 h1 {
-	font-family: Superclarendon;
-	font-size: 54.4px;
-	letter-spacing: -2px;
-	font-weight: normal;
+	text-indent: -99999px;
 	margin: 0 0 30px;
 	padding: 0;
+	background: url("img/logo.svg") no-repeat scroll;
+	background-size: 1000px auto;
+	height: 55px;
+	width: 613px;
 }
 
 .muted {
@@ -216,7 +217,7 @@ footer .right {
 
 	h1,
 	#mailchimp-form {
-		max-width: 340px;
+		max-width: 370px;
 	}
 
 	h2 {
