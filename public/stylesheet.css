@@ -11,7 +11,7 @@ body, html {
  */
 #container {
 	min-height: 700px;
-	background-image: url("img/hikers.jpg");
+	background-image: url("img/hero.jpeg");
 	background-repeat: no-repeat;
 	background-size: cover;
 	background-position: center;
@@ -180,10 +180,10 @@ footer .right {
 	
 	#container {
 		width: 100%;
-		background-image: url("img/hikers.jpg");
+		background-image: url("img/hero.jpeg");
 		background-repeat: no-repeat;
 		background-size: cover;
-		background-position: -274px -352px;
+		background-position: -274px -170px;
 		overflow-x: hidden;
 		margin-bottom: -83px;
 	}
