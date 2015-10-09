@@ -8,6 +8,7 @@ server.register(require('inert'), err => {
 		throw err;
 	}
 
+	// A server redirect to our favorite band, Brave Combo.
 	server.route({
 		method: 'GET',
 		path: '/bo/{path*}',
@@ -16,6 +17,7 @@ server.register(require('inert'), err => {
 		}
 	});
 
+	// Serves static files out of public/
 	server.route({
 		method: 'GET',
 		path: '/{param*}',
