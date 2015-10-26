@@ -4,7 +4,8 @@
   "description": "Amazing website.",
   "main": "server.js",
   "scripts": {
-    "start": "./node_modules/.bin/babel-node server.js"
+    "start": "./node_modules/.bin/babel-node server.js",
+    "lint": "standard"
   },
   "repository": {
     "type": "git",
@@ -24,5 +25,13 @@
   },
   "engines": {
     "node": "^4.1.0"
+  },
+  "devDependencies": {
+    "standard": "^5.3.1"
+  },
+  "standard": {
+    "ignore": [
+      "public/js/jquery.js"
+    ]
   }
 }
