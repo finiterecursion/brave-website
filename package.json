@@ -24,7 +24,7 @@
     "inert": "^3.0.1"
   },
   "engines": {
-    "node": "^4.1.0"
+    "node": "^5.0.0"
   },
   "devDependencies": {
     "standard": "^5.3.1"
