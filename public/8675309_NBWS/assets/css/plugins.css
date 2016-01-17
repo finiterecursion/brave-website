@@ -79,7 +79,7 @@
 .tp-banner-container a.btn-u,
 .tp-banner-container a.btn-u:hover {
   color: #fff;
-  border: solid 1px transparent;
+  border: solid 2px transparent;
 }
 
 .tp-banner-container a.re-btn-brd {
@@ -186,11 +186,11 @@
 
 /*Slides*/
 .rs-caption-1 {
-  color: #fff;
-  font-size: 42px;
-  font-weight: 400;
-  padding: 2px 35px;
-  position: relative;
+  color: #eee;
+  font-size: 40px;
+  font-weight: 500;
+  padding: 0px 35px;
+  position: absolute;
 /*
   border-top: solid 1px #fff;
   border-bottom: solid 1px #fff;
@@ -224,9 +224,9 @@
 .rs-caption-2 {
   color: #fff;
   position: relative;
-  font-size: 28px;
+  font-size: 24px;
   font-weight: 200;
-  line-height: 36px;
+  line-height: 32px;
   padding: 10px 10px;
     margin-left: 0px
   text-align: left;
