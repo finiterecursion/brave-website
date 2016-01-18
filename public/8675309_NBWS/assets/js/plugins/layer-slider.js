@@ -8,8 +8,12 @@ var LayerSlider = function () {
 		        jQuery("#layerslider").layerSlider({
 			        skin: 'fullwidth',
 			        responsive : true,
+                    pauseOnHover : true,
 			        responsiveUnder : 960,
 			        layersContainer : 960,
+                    hideUnder: 400,
+                    navButtons: false,
+                    navStartStop: false,
 			        skinsPath: 'assets/plugins/layer-slider/layerslider/skins/'
 			    });
 		    });     

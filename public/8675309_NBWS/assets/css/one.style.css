@@ -54,8 +54,8 @@ a:hover {
 }
 
 ::selection {
-  color: #fff;
-  background: #ff5000;
+  color: #ff6c00;
+  background: #fff;
 }
 
 .navbar-fixed-bottom .navbar-collapse,
@@ -140,11 +140,11 @@ document.querySelector('.menu-container img').src = '../assets/img/brave_logo_bi
 }
 
 .one-page-header .navbar-toggle .icon-bar {
-  height: 1px;
-  width: 25px;
+  height: 2px;
+  width: 20px;
   font-size: 22px;
   background: #fff;
-  margin-bottom: 7px;
+  margin-bottom: 5px;
 }
 
 .one-page-header .navbar-toggle .icon-bar:last-child {
@@ -154,25 +154,26 @@ document.querySelector('.menu-container img').src = '../assets/img/brave_logo_bi
 /*Navbar*/
 .one-page-header {
   border-bottom: none;
-  background: rgba(193, 193, 193, 0.8);
+  background: rgba(193, 193, 193, 0.7);
 }
 .one-page-header .container {
   position: relative;
 }
 
 .one-page-header .navbar-nav > li > a {
-  color: #fff;
-  font-size: 17.5px;
+  color: #ffffff;
+  font-size: 20px;
+    font-weight: 200;
   text-transform: lowercase;
-  padding: 17px 15px 3px;
+  padding: 10px 10px 10px;
 }
 
 .one-page-header .navbar-nav > li > a:before {
-  left: -3px;
-  top: 15px;
+  left: -1px;
+  top: 8px;
   z-index: 2;
-  color: #fff;
-  font-size: 6px;
+  color: #ff5000;
+  font-size: 3px;
   content: "\f10c";
   margin-right: 6px;
     margin-top: 2px;
@@ -220,6 +221,7 @@ document.querySelector('.menu-container img').src = '../assets/img/brave_logo_bi
 
   .one-page-header .navbar-collapse.collapse {
     display: none !important;
+      background-color: rgba(0, 0, 0, 0.71);
   }
 
   .one-page-header .navbar-collapse.collapse.in {
@@ -236,7 +238,7 @@ document.querySelector('.menu-container img').src = '../assets/img/brave_logo_bi
   }
 
   .navbar-default .navbar-nav > li > a {
-    padding: 10px 0;
+    padding: 10px 10;
   }
 
   .navbar-default .navbar-nav > li > a::before {
@@ -246,7 +248,7 @@ document.querySelector('.menu-container img').src = '../assets/img/brave_logo_bi
 
 @media(min-width: 992px) {
   .one-page-header.navbar {
-    padding: 10px 0;
+    padding: 10px 10;
     -webkit-transition: background .3s ease-in-out,padding .3s ease-in-out;
     -moz-transition: background .3s ease-in-out,padding .3s ease-in-out;
     transition: background .3s ease-in-out,padding .3s ease-in-out;
@@ -254,7 +256,7 @@ document.querySelector('.menu-container img').src = '../assets/img/brave_logo_bi
 
   .one-page-header.top-nav-collapse {
     /* Customize the look and feel of the collapsed top nav here */
-    padding: 0px 0;
+    padding: 10px 0;
   }
 }
 
@@ -556,20 +558,24 @@ document.querySelector('.menu-container img').src = '../assets/img/brave_logo_bi
 
 /*Fixed Header*/
 .one-page-header.top-nav-collapse {
-  background: #fff;
-  box-shadow: 0 0 3px #b5b5b5;
+  background: rgba(100,100,100,0.9
+  );
+  box-shadow: 0 0 8px #000000;
 }
 
 @media (max-width: 768px) {
   .one-page-header.top-nav-collapse {
-    padding: 0;
+    padding:50;
   }
 }
 
 .one-page-header.top-nav-collapse .navbar-brand,
 .one-page-header.top-nav-collapse .navbar-nav > li > a,
 .one-page-header.top-nav-collapse .navbar-nav > li > a:before {
-  color: #777;
+  color: #eee;
+    font-weight: 200;
+    font-kerning: 60;
+    letter-spacing: 40;
 }
 
 .one-page-header.top-nav-collapse .navbar-brand {
