@@ -155,7 +155,7 @@ The data-spy and data-target are part of the built-in Bootstrap scrollspy functi
                      <STRONG>Join Brave and make it our Internet.</STRONG>
                     </span>
 
-                    <a class="btn-u btn-u-black ls-s-1" href="#faster" style=" 
+                    <a class="btn-u btn-u-black ls-s-1" data-toggle="modal" data-target="#mailchimpModal2" href="#faster" style=" 
                                                 padding: 20px 40px; 
                                                 font-size:36px; 
                                                 top:620px; 
@@ -225,7 +225,7 @@ The data-spy and data-target are part of the built-in Bootstrap scrollspy functi
                  Join Brave and make it our Internet.
             </span>
 
-            <a class="btn-u btn-u-black ls-s-1" href="#faster" style=" 
+            <a class="btn-u btn-u-black ls-s-1" data-toggle="modal" data-target="#mailchimpModal2" href="#faster" style=" 
                                         padding: 8px 18px; 
                                         font-size:18px; 
                                         top:420px; 
@@ -236,7 +236,7 @@ The data-spy and data-target are part of the built-in Bootstrap scrollspy functi
                                         durationout : 2000; ">
                 Learn More</a>
                  
-                      <a class="btn-u btn-u-black ls-s-1" href="#contact" style=" 
+                      <a class="btn-u btn-u-black ls-s-1" data-toggle="modal" data-target="#mailchimpModal" href="#contact" style=" 
                                         padding: 8px 18px; 
                                         font-size:18px;     
                                         top:420px; 
@@ -885,13 +885,28 @@ Brave Headquarters is located in San Francisco, California.   </p><br>
     </div>
     <!--=== End Footer v5 ===-->
 
-    <!-- Mailchimp Subscription Bootstrap Modal -->
+    <!-- Mailchimp Subscription Bootstrap Modals -->
     <div class="modal fade" id="mailchimpModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
       <div class="modal-dialog" role="document">
         <div class="modal-content">
           <div class="modal-header">
             <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
             <h4 class="modal-title" id="myModalLabel">Get In Early</h4>
+          </div>
+          <div class="modal-body">
+            Mailchimp Form Goes Here..
+            <p><br /><br /><br /><br /><br /><br /><br /><br /></p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="modal fade" id="mailchimpModal2" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+      <div class="modal-dialog" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+            <h4 class="modal-title" id="myModalLabel">Get Updated About Brave</h4>
           </div>
           <div class="modal-body">
             Mailchimp Form Goes Here..
