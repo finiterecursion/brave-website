@@ -6,7 +6,7 @@
 }
 
 .footer-v5 .footer p {
-	color: #777;
+	color: #bbb;
 }
 
 /*Heading Fotoer*/
@@ -23,7 +23,7 @@
     height: 1px;
     width: 50px;
     content: " ";
-    background: #fff;
+    background: #ff4500;
     position: absolute;
 }
 
