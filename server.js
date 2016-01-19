@@ -8,6 +8,17 @@ server.register(require('inert'), err => {
     throw err
   }
 
+  server.ext('onPreResponse', function(request, reply) {
+    if (request.response.statusCode === 200) {
+      // send cache control headers for Fastly
+      // this will cache them at the fastly edge servers for a long
+      // period of time, but the browser clients will use the default
+      // cache-control settings and etags
+      request.response.headers['Surrogate-Control'] = 'max-age=2592000'
+    }
+    reply(request.response)
+  })
+
   // A server redirect to our favorite band, Brave Combo.
   server.route({
     method: 'GET',
