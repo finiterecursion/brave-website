@@ -108,10 +108,6 @@ a:hover {
   font-family: 'Open Sans', sans-serif;
 }
 
-.one-page-header .navbar-logo {
-document.querySelector('.menu-container img').src = '../assets/img/brave_logo_big2.png'
-}
-
 .one-page-header .navbar-brand span {
   color: #FF5000 !important;
 }
