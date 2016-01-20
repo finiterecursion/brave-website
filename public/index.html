@@ -899,8 +899,17 @@ In evolving systems like the Web, many players get stuck optimizing locally, no 
 //            OwlCarousel.initOwlCarousel();
 //                gridContainer.cubeportfolio();
                 LayerSlider.initLayerSlider();
-
+            if (window.location.hash && window.location.hash !== '#body') {
+                jQuery('.logo').hide();
+            }
         });
+        window.onhashchange = function() {
+            if (window.location.hash && window.location.hash !== '#body') {
+                jQuery('.logo').hide();
+            } else {
+                jQuery('.logo').show();
+            }
+        }
     </script>
     <!--[if lt IE 9]>
         <script src="assets/plugins/respond.js"></script>
