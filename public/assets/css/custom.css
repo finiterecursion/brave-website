@@ -1,1 +1,28 @@
 /* Add here all your css styles (customizations) */
+
+/* hack for the Team grid not stacking right */
+@media (max-width: 770px) {
+	#team .col-sm-3 {
+		min-height: 450px;
+	}
+}
+@media (max-width: 550px) {
+	#team .col-sm-3 {
+		min-height: 345px;
+	}
+}
+@media (max-width: 500px) {
+	#team .col-sm-3 {
+		min-height: 320px;
+	}
+}
+@media (max-width: 450px) {
+	#team .col-sm-3 {
+		min-height: 300px;
+	}
+}
+@media (max-width: 400px) {
+	#team .col-sm-3 {
+		min-height: 275px;
+	}
+}
