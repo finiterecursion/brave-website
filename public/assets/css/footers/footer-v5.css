@@ -156,6 +156,10 @@
     color: #555;
 }
 
+ul.terms-menu {
+  margin: 10px auto;
+}
+
 /*Footer Copyright*/
 .footer-v5 .copyright {
 	padding: 15px 0;
