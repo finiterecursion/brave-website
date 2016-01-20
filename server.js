@@ -43,11 +43,6 @@ server.register(require('inert'), err => {
   })
 
   server.start(() => {
-    if (process.env.FASTLY_API_KEY) {
-      require('fastly')(process.env.FASTLY_API_KEY).purgeAll(process.env.FASTLY_SERVICE_ID, function (err, obj) {
-        if (err) return console.dir(err)
-      })
-    }
     console.log('Server running at:', server.info.uri)
   })
 })

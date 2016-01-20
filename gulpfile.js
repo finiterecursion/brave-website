@@ -7,6 +7,12 @@ var assets = require('./assets.js')
 
 gulp.task('default', function(){
 
+  if (process.env.FASTLY_API_KEY) {
+    require('fastly')(process.env.FASTLY_API_KEY).purgeAll(process.env.FASTLY_SERVICE_ID, function (err, obj) {
+      if (err) return console.dir(err)
+    })
+  }
+
   gulp.src(assets.jsSrc)
     .pipe(sourcemaps.init())
     .pipe(concat('scripts.js'))
