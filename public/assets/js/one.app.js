@@ -80,7 +80,7 @@ var App = function() {
       $('.page-scroll a').bind('click', function(event) {
         var $anchor = $(this);
         $('html, body').stop().animate({
-          scrollTop: $($anchor.attr('href')).offset().top
+          scrollTop: $($anchor.attr('href')).offset().top - 116
         }, 1500, 'easeInOutExpo');
         event.preventDefault();
       });
