@@ -205,3 +205,8 @@
 .sky-form.submited .message p {
   color: #fff;
 }
+
+#mce-responses, .mce_inline_error[for="mce-EMAIL"] {
+  color: #bbb;
+  margin-top: 5px;
+}
