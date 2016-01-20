@@ -19,6 +19,7 @@
   "homepage": "https://github.com/brave/brave-webiste",
   "dependencies": {
     "babel-cli": "^6.1.2",
+    "fastly": "^1.2.1",
     "hapi": "^11.1.0",
     "hapi-async-handler": "^1.0.3",
     "inert": "^3.0.1"
