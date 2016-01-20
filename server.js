@@ -39,6 +39,12 @@ server.register(require('inert'), err => {
         listing: false,
         index: true
       }
+    },
+    config: {
+      state: {
+        parse: false,
+        failAction: 'ignore'
+      }
     }
   })
 
