@@ -31,10 +31,6 @@ a {
     background: #e67e22;
 }
 
-.navbar-default .navbar-nav > li > a:focus,
-.navbar-default .navbar-nav .dropdown-menu > li > a:focus {
-    color: #e67e22;
-}
 @media (max-width: 991px) {
   .one-page-header .dropdown-menu a:hover,
   .one-page-header.top-nav-collapse .dropdown-menu > li > a:hover {

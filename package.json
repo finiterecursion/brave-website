@@ -5,7 +5,8 @@
   "main": "server.js",
   "scripts": {
     "start": "./node_modules/.bin/babel-node server.js",
-    "lint": "standard"
+    "lint": "standard",
+    "postinstall": "./node_modules/.bin/gulp"
   },
   "repository": {
     "type": "git",
@@ -19,15 +20,20 @@
   "homepage": "https://github.com/brave/brave-webiste",
   "dependencies": {
     "babel-cli": "^6.1.2",
+    "fastly": "^1.2.1",
     "hapi": "^11.1.0",
     "hapi-async-handler": "^1.0.3",
-    "inert": "^3.0.1"
+    "inert": "^3.0.1",
+    "gulp": "^3.9.0",
+    "gulp-concat-util": "^0.5.4",
+    "gulp-minify-css": "^1.2.3",
+    "gulp-sourcemaps": "^1.6.0",
+    "gulp-uglifyjs": "^0.6.2",
+    "hapi-assets": "^0.3.0",
+    "standard": "^5.3.1"
   },
   "engines": {
     "node": "^5.0.0"
-  },
-  "devDependencies": {
-    "standard": "^5.3.1"
   },
   "standard": {
     "ignore": [
