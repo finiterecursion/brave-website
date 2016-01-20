@@ -82,7 +82,7 @@ var App = function() {
 
     //jQuery for page scrolling feature - requires jQuery Easing plugin
     $(function() {
-      $('.page-scroll a, .lean-more-button').bind('click', function(event) {
+      $('.page-scroll a, .scroll-button').bind('click', function(event) {
         var $anchor = $(this);
         $('html, body').stop().animate({
           scrollTop: $($anchor.attr('href')).offset().top - offsetHeight
