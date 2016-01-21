@@ -99,6 +99,9 @@ a:hover {
 }
 
 /*Navbar Logo*/
+.logo img {
+  padding-left: 15px !important;
+}
 .one-page-header .navbar-brand {
   font-size: 1px;
   font-weight: 20;
@@ -117,7 +120,7 @@ a:hover {
     padding-left: 100;
   }
 }
-@media (max-width: 600px) {
+@media (max-width: 600px) { 
   body {
     margin-top: 82px;
   }
@@ -166,8 +169,8 @@ a:hover {
 
 .one-page-header .navbar-nav > li > a {
   color: #ffffff;
-  font-size: 20px;
-    font-weight: 200;
+  font-size: 18px;
+    font-weight: 300;
   text-transform: lowercase;
   padding: 10px 10px 10px;
 }
@@ -280,6 +283,21 @@ a:hover {
     margin-left: 25px;
   }
 }
+/* navbar menu modifications */
+@media (max-width:990px) {
+  #fullsize-menu {
+    clear: left;
+    margin-left:72px;
+  }
+}
+@media (min-width:990px) {
+  .brave-nav {
+    position:absolute; 
+    bottom:0px; 
+    right:40px;
+  }
+}
+
 
 /* Top Log-Reg */
 .log-reg-block {
@@ -569,7 +587,7 @@ a:hover {
 
 @media (max-width: 768px) {
   .one-page-header.top-nav-collapse {
-    padding:50;
+    /*padding: 50px;*/
   }
 }
 
@@ -623,6 +641,37 @@ a:hover {
 .about-section .about-image {
   padding-top: 100px;
 }
+
+/*Team section
+------------------------------------*/
+/* hack for the Team grid not stacking right */
+@media (max-width: 770px) {
+  #team .col-sm-3 {
+    min-height: 450px;
+  }
+}
+@media (max-width: 550px) {
+  #team .col-sm-3 {
+    min-height: 345px;
+  }
+}
+@media (max-width: 500px) {
+  #team .col-sm-3 {
+    min-height: 320px;
+  }
+}
+@media (max-width: 450px) {
+  #team .col-sm-3 {
+    min-height: 300px;
+  }
+}
+@media (max-width: 400px) {
+  #team .col-sm-3 {
+    min-height: 275px;
+  }
+}
+
+
 
 /*Icon Lists*/
 .content-boxes-v3 i.icon-custom {

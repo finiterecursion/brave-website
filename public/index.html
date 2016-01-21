@@ -444,7 +444,7 @@ The data-spy and data-target are part of the built-in Bootstrap scrollspy functi
                             </ul>
                         </div>
                         <h3>Brendan Eich</h3>
-                        <h4>President and CEO</h4>
+                        <h4>Founder, President and CEO</h4>
                         <p></p>
                     </li>
 
@@ -610,7 +610,7 @@ The data-spy and data-target are part of the built-in Bootstrap scrollspy functi
                 <div class="news-v3-in-sm no-padding">
                     <ul class="list-inline posted-info">
                         <li>By Brendan Eich</li>
-                        <li>President and CEO</li>
+                        <li>Founder, President and CEO</li>
                         <li>Posted January 20, 2016</li>
                     </ul>
                     <h2><a href="#">How to Fix the Web</a></h2>
@@ -657,7 +657,7 @@ The data-spy and data-target are part of the built-in Bootstrap scrollspy functi
     <!-- End About Section -->
 
  <!--=== Footer v1 ===-->
- <section id="contact">
+ <section id="brave-footer">
     <div id="footer-v1" class="footer-v1">
         <div class="footer">
             <div class="container">
@@ -717,18 +717,40 @@ The data-spy and data-target are part of the built-in Bootstrap scrollspy functi
                     <!-- End Link List -->
 
                     <!-- Address -->
-                    <div class="col-md-3 map-img md-margin-bottom-40">
-                        <div class="headline"><h2>Contact Us</h2></div>
-                        <address class="md-margin-bottom-40">
-                            1161 Mission St. STE 113<BR>
-                            San Francisco, CA 94103 <br /><BR>
-                            Press Contacts: <a href="mailto:press@brave.com" >press@brave.com</a><BR>
-                            Support: <a href="mailto:support@brave.com" >support@brave.com</a><BR>
-                            Twitter: <a href="https://twitter.com/brave" target="_blank">twitter.com/brave</a>
-                        </address>
+                    <section id="contact">
+                        <div class="col-md-3 map-img md-margin-bottom-40">
+                            <div class="headline"><h2>Contact Us</h2></div>
+                            <address class="md-margin-bottom-40">
+                                1161 Mission St. STE 113<BR>
+                                San Francisco, CA 94103 <br /><BR>
+                                Press Contacts: <a href="mailto:press@brave.com" >press@brave.com</a><BR>
+                                Support: <a href="mailto:support@brave.com" >support@brave.com</a><BR>
+                                Twitter: <a href="https://twitter.com/brave" target="_blank">twitter.com/brave</a>
+                            </address>
 
-                        <script type="text/javascript" src="https://form.jotform.com/jsform/60195600795156"></script>
-                    </div>
+                            <iframe
+
+                              id="JotFormIFrame"
+
+                              onload="window.parent.scrollTo(0,0)"
+
+                              allowtransparency="true"
+
+                              src="https://form.jotform.com/60195600795156"
+
+                              frameborder="0"
+
+                              style="width:190px;
+
+                              height:150px;
+
+                              border:none;"
+
+                              scrolling="no">
+
+                            </iframe>
+                        </div>
+                    </section>
                               
                     
                     <!-- End Address -->
@@ -881,7 +903,7 @@ The data-spy and data-target are part of the built-in Bootstrap scrollspy functi
             }
         };
         window.onscroll = function() {
-            if (window.document.body.scrollTop === 0) {
+            if (window.pageYOffset === 0) {
                 showOrigLogo()
             } else {
                 showSmallLogo()
