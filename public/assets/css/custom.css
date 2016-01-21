@@ -27,7 +27,7 @@
 	}
 }
 @media (max-width:990px) {
-	.brave-nav {
+	#fullsize-menu {
 		clear: left;
 	}
 }
