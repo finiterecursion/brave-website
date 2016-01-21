@@ -902,7 +902,7 @@ The data-spy and data-target are part of the built-in Bootstrap scrollspy functi
             }
         };
         window.onscroll = function() {
-            if (window.document.body.scrollTop === 0) {
+            if (window.pageYOffset === 0) {
                 showOrigLogo()
             } else {
                 showSmallLogo()
