@@ -863,7 +863,12 @@ The data-spy and data-target are part of the built-in Bootstrap scrollspy functi
             } else {
                 jQuery('.logo').show();
             }
-        }
+        };
+        window.onscroll = function() {
+            if (window.document.body.scrollTop === 0) {
+                jQuery('.logo').show();
+            }
+        };
     </script>
     <!--[if lt IE 9]>
         <script src="assets/plugins/respond.js"></script>
