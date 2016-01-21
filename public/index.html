@@ -845,10 +845,14 @@ The data-spy and data-target are part of the built-in Bootstrap scrollspy functi
     <script src="assets/js/plugins/layer-slider.js"></script>
     <script>
         function showSmallLogo() {
-            jQuery('#brave-logo').height(40)
+            if (jQuery(document.body).width() > 976) {
+                jQuery('#brave-logo').height(40)
+            }
         }
         function showOrigLogo() {
-            jQuery('#brave-logo').height(76)
+            if (jQuery(document.body).width() > 976) {
+                jQuery('#brave-logo').height(76)
+            }
         }
         jQuery(document).ready(function() {
             App.init();
