@@ -26,6 +26,19 @@
 		min-height: 275px;
 	}
 }
+@media (max-width:990px) {
+	.brave-nav {
+		clear: left;
+	}
+}
+@media (min-width:990px) {
+	.brave-nav {
+		position:absolute; 
+		bottom:0px; 
+		right:40px;
+	}
+}
 
 /* mailchimp signup */
 #mc_embed_signup_slider{background:#fff; clear:left; font:14px Helvetica,Arial,sans-serif; }
+
