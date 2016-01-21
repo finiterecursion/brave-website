@@ -29,6 +29,7 @@
 @media (max-width:990px) {
 	#fullsize-menu {
 		clear: left;
+		margin-left:72px;
 	}
 }
 @media (min-width:990px) {
