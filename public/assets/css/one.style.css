@@ -773,6 +773,13 @@ a:hover {
   margin: 0 0 5px;
 }
 
+.footer p,
+.footer li,
+.footer li a {
+  color: #999;
+}
+
+
 .footer-simple {
   padding: 20px 0;
   border-top: 1px solid #eee;

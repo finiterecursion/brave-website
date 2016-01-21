@@ -28,6 +28,7 @@
     <!-- CSS Footer -->
     <link rel="stylesheet" href="assets/css/footers/footer-v7.css">
     <link rel="stylesheet" href="assets/css/footers/footer-v5.css">
+    <link rel="stylesheet" href="assets/css/footers/footer-v1.css">
 
     <!-- CSS Implementing Plugins -->
     <link rel="stylesheet" href="assets/plugins/animate.css">
@@ -39,8 +40,6 @@
     <link rel="stylesheet" href="assets/plugins/cube-portfolio/cubeportfolio/custom/custom-cubeportfolio.css">
     <link rel="stylesheet" href="assets/plugins/revolution-slider/rs-plugin/css/settings.css">
     <link rel="stylesheet" href="assets/plugins/layer-slider/layerslider/css/layerslider.css">
-    <link rel="stylesheet" href="https://cdn-images.mailchimp.com/embedcode/classic-081711.css">
-
     <!--[if lt IE 9]><link rel="stylesheet" href="assets/plugins/revolution-slider/rs-plugin/css/settings-ie8.css" type="text/css" media="screen"><![endif]-->
 
     <!-- Style Switcher -->
@@ -72,7 +71,7 @@ The data-spy and data-target are part of the built-in Bootstrap scrollspy functi
 
                              <!-- Logo -->
 <a class="logo" href="index.html">
-             <img src="assets/img/brave_logo_big2.png" alt="Logo">
+             <img id="brave-logo" src="assets/img/brave_logo_big2.png" alt="Logo" style="float: left; padding-left:10%">
             </a>
 <!-- End Logo -->
 
@@ -80,7 +79,7 @@ The data-spy and data-target are part of the built-in Bootstrap scrollspy functi
             <!-- Collect the nav links, forms, and other content for toggling -->
             <div id="fullsize-menu" class="collapse navbar-collapse navbar-ex1-collapse">
                 <div class="menu-container">
-                    <ul class="nav navbar-nav">
+                    <ul class="nav navbar-nav brave-nav" style="">
                         <li class="home">
                             <a href="#body">Introducing Brave</a>
                         </li>
@@ -103,6 +102,11 @@ The data-spy and data-target are part of the built-in Bootstrap scrollspy functi
                             <a href="#about">About</a>
 
                         </li>
+                        
+                             <li>
+                            <a href="FAQ.html">FAQ</a>
+
+                        </li>
 
                         <li>
                             <a href="#contact">Contact</a>
@@ -123,10 +127,8 @@ The data-spy and data-target are part of the built-in Bootstrap scrollspy functi
 
 
             <!-- mobile slide alternative -->
-            <div id="layerslidermobile" style="width: 100%; height: 1300px; margin: 0px auto;">
+            <div id="layerslidermobile" style="width: 100%; height: 1300px; margin: 0px auto; background-color:#4F6288">
                 <div class="ls-slide mobile-width-slide">
-
-                    <img src="assets/img/sliders/revolution/surfers_bluewash_tan_tall.jpg" class="ls-bg" alt="Slide background">
 
                     <span class="ls-s-1" style="color: #ffffff;
                                                 line-height:65px;
@@ -171,7 +173,7 @@ The data-spy and data-target are part of the built-in Bootstrap scrollspy functi
                                                 slideoutdirection : bottom;
                                                 durationin : 2000;
                                                 durationout : 2000; ">
-                        learn more</a>
+                        Learn More</a>
 
                               <a class="btn-u btn-u-black ls-s-1" data-toggle="modal" data-target="#mailchimpModal" href="#" style="
                                                 padding: 20px 40px;
@@ -182,7 +184,7 @@ The data-spy and data-target are part of the built-in Bootstrap scrollspy functi
                                                 slideoutdirection : bottom;
                                                 durationin : 2000;
                                                 durationout : 2000; ">
-                        sign up for beta</a>
+                        Sign Up for Beta</a>
 
     <!-- YouTube/Vimeo video -->
     <div class="ls-l" data-ls="offsetxin: 400; offsetyin: 150;" style=" 
@@ -197,8 +199,8 @@ The data-spy and data-target are part of the built-in Bootstrap scrollspy functi
                 </div>
             </div>
 <!--=== Slider ===-->
-                     <div id="layerslider" style="width: 100%; height: 540px; margin: 0px auto;">
-       
+                     <div id="layerslider" style="width: 100%; height: 540px; margin: 0px auto; background-color:#4F6288">
+
                  <!--First Slide-->
             <div class="ls-slide" style="slidedirection: right; transition2d: 5; ">
             <img src="assets/img/sliders/revolution/surfers_bluewash_tan.jpg" class="ls-bg" alt="Slide background">
@@ -253,17 +255,17 @@ The data-spy and data-target are part of the built-in Bootstrap scrollspy functi
                                         slideoutdirection : bottom;
                                         durationin : 2000;
                                         durationout : 2000; ">
-                sign up for beta</a>
+                Sign Up for Beta</a>
             <a class="btn-u btn-u-black ls-s-1" href="#devs" style=" 
                                         padding: 8px 18px; 
                                         font-size:18px;     
                                         top:440px; 
-                                        left: 350px; 
+                                        left:357px; 
                                         slidedirection : bottom; 
                                         slideoutdirection : bottom; 
                                         durationin : 2000; 
                                         durationout : 2000; ">
-                I'm a developer</a>
+                I'm a Developer</a>
 
 
 
@@ -613,37 +615,37 @@ The data-spy and data-target are part of the built-in Bootstrap scrollspy functi
                     </ul>
                     <h2><a href="#">How to Fix the Web</a></h2>
                     <p>The Web is always in trouble for some reason or other. I remember when Microsoft came after Netscape and threatened to lock Web standards into IE. Only the Web is so big, with such reach to billions of users, that no one owns it. This means it will always be contested ground.</p>
-<p>
-But the Web today faces a primal threat.</p>
- <p>
-Some say the threat to the Web is “mobile”, but the Web is co-evolving with smartphones, not going away. Webviews are commonplace in apps, and no publisher of note is about to replace its primary website with a walled-garden equivalent. Nor can most websites hope to develop their own apps and convert their browser users to app-only users.</p>
- <p>
- I contend that the threat we face is ancient and, at bottom, human. Some call it advertising, others privacy. I view it as the <a href="https://en.wikipedia.org/wiki/Principal%E2%80%93agent_problem">Principal-Agent conflict of interest</a> woven into the fabric of the Web.</p>
- <p>
- You use a browser to find and contribute information, but you generally do not pay for the websites who host that information. Across billions of people, for most sites in most countries, it isn’t realistic to expect anything but a free Web. And as <a href="https://stratechery.com/2015/tim-cooks-unfair-and-unrealistic-privacy-speech-strategy-credits-the-privacy-priority-problem/">Ben Thompson points out</a>, “free” means ad-supported in the main. Yes, successful sites and apps may convert you to a paying customer, but most won’t.</p>
- <p>
-You might object: “Hey, I’m ready to pay for websites I support”. I’m with you, but many people are not so well-off that they can support most of the commercial sites they use. Also, the Web missed an opportunity back in the early days to define payments and all they entail as a standard.</p>
-<p>
-Once you grant this premise, that the Web needs ads in the large, it follows that your browsing habits will be surveilled, to the best of the ad ecosystem players’ abilities. Also, depending on how poorly ads are designed and integrated, you may become blind or averse to them. Since the ‘90s, I’ve seen several races to the bottom along these lines.</p>
-<p>
-The Principal (you) uses a browser (one of a layer of agents, both software and humans) to browse the Web and keep its lights on. Consider your primary agent, the browser. It’s a complex piece of code, but now thanks to Mozilla, WebKit, Chromium, and even in part Microsoft, this billion-dollar investment is available as a mix of free and open source software.</p>
-<p>
-Yet thanks to tracking options that are inevitable with anything like the Web, your valuable and private user behavior and browsing intent signals can be extracted via your current browser. And that may not be a fair deal.</p>
-<p>
-Everyone’s talking about ad blocking. Blockers can make the user experience of the Web much better. But as <a href="https://marco.org/2015/09/18/just-doesnt-feel-good">Marco Arment noted</a>, they don’t feel good to many folks. They feel like free-riding, or even starting a war. You may never click on an ad, but even forming an impression from a viewable ad has some small value. With enough people blocking ads, the Web’s main funding model is in jeopardy.</p>
-<p>
-At Brave, we’re building a solution designed to avert war and give users the fair deal they deserve for coming to the Web to browse and contribute. We are building a new browser and a connected private cloud service with anonymous ads. Today we’re releasing the 0.7 developer version for early adopters and testers, along with open source and our roadmap.</p>
-<p>
-Brave browsers block everything: initial signaling/analytics scripts that start the programmatic advertising “dirty pipe”, impression-tracking pixels, and ad-click confirmation signals. By default Brave will insert ads only in a few standard-sized spaces. We find those spaces via a cloud robot (so users don't have to suffer, even a few canaries per screen size-profile, with ad delays and battery draining). We will target ads based on browser-side intent signals phrased in a standard vocabulary, and without a persistent user id or highly re-identifiable cookie.</p>
-<p>
-The browser sees everything you do, including actions to stop that annoying phenomenon of retargeting where an ad chases you around the Web, often for something you just bought or decided not to buy. We keep user data out of our cloud Brave Vault by default. It’s better for you and us that we don’t store any of your data without your permission.</p>
-<p>
-Thus we are a browser-based ad-tech platform, with high precision and privacy. What’s more, we aim to solve the Principal-Agent problem wherever it arises. Brave is the only approach to the Web that puts users first in ownership and control of their browsing data by blocking trackers by default, with no exceptions. The same could apply to other kinds of data, and with your help, we hope to grow big enough to serve users’ interests above all others’.</p>
-<p>
-In evolving systems like the Web, many players get stuck optimizing locally, no matter how much they think globally. Ad blockers may hope for better ads, but so far they seem to be having little effect. Publishers trying ad-blocker blockers may get a few local wins, but that path is an arms race. Brave brings innovation to bear across the whole Web system.</p>
-<p>
-<strong>Join us. With your help, we can fix the Web.</strong>
-</p>
+                    <p>
+                    But the Web today faces a primal threat.</p>
+                     <p>
+                    Some say the threat to the Web is “mobile”, but the Web is co-evolving with smartphones, not going away. Webviews are commonplace in apps, and no publisher of note is about to replace its primary website with a walled-garden equivalent. Nor can most websites hope to develop their own apps and convert their browser users to app-only users.</p>
+                     <p>
+                     I contend that the threat we face is ancient and, at bottom, human. Some call it advertising, others privacy. I view it as the <a href="https://en.wikipedia.org/wiki/Principal%E2%80%93agent_problem">Principal-Agent conflict of interest</a> woven into the fabric of the Web.</p>
+                     <p>
+                     You use a browser to find and contribute information, but you generally do not pay for the websites who host that information. Across billions of people, for most sites in most countries, it isn’t realistic to expect anything but a free Web. And as <a href="https://stratechery.com/2015/tim-cooks-unfair-and-unrealistic-privacy-speech-strategy-credits-the-privacy-priority-problem/">Ben Thompson points out</a>, “free” means ad-supported in the main. Yes, successful sites and apps may convert you to a paying customer, but most won’t.</p>
+                     <p>
+                    You might object: “Hey, I’m ready to pay for websites I support”. I’m with you, but many people are not so well-off that they can support most of the commercial sites they use. Also, the Web missed an opportunity back in the early days to define payments and all they entail as a standard.</p>
+                    <p>
+                    Once you grant this premise, that the Web needs ads in the large, it follows that your browsing habits will be surveilled, to the best of the ad ecosystem players’ abilities. Also, depending on how poorly ads are designed and integrated, you may become blind or averse to them. Since the ‘90s, I’ve seen several races to the bottom along these lines.</p>
+                    <p>
+                    The Principal (you) uses a browser (one of a layer of agents, both software and humans) to browse the Web and keep its lights on. Consider your primary agent, the browser. It’s a complex piece of code, but now thanks to Mozilla, WebKit, Chromium, and even in part Microsoft, this billion-dollar investment is available as a mix of free and open source software.</p>
+                    <p>
+                    Yet thanks to tracking options that are inevitable with anything like the Web, your valuable and private user behavior and browsing intent signals can be extracted via your current browser. And that may not be a fair deal.</p>
+                    <p>
+                    Everyone’s talking about ad blocking. Blockers can make the user experience of the Web much better. But as <a href="https://marco.org/2015/09/18/just-doesnt-feel-good">Marco Arment noted</a>, they don’t feel good to many folks. They feel like free-riding, or even starting a war. You may never click on an ad, but even forming an impression from a viewable ad has some small value. With enough people blocking ads, the Web’s main funding model is in jeopardy.</p>
+                    <p>
+                    At Brave, we’re building a solution designed to avert war and give users the fair deal they deserve for coming to the Web to browse and contribute. We are building a new browser and a connected private cloud service with anonymous ads. Today we’re releasing the 0.7 developer version for early adopters and testers, along with open source and our roadmap.</p>
+                    <p>
+                    Brave browsers block everything: initial signaling/analytics scripts that start the programmatic advertising “dirty pipe”, impression-tracking pixels, and ad-click confirmation signals. By default Brave will insert ads only in a few standard-sized spaces. We find those spaces via a cloud robot (so users don't have to suffer, even a few canaries per screen size-profile, with ad delays and battery draining). We will target ads based on browser-side intent signals phrased in a standard vocabulary, and without a persistent user id or highly re-identifiable cookie.</p>
+                    <p>
+                    The browser sees everything you do, including actions to stop that annoying phenomenon of retargeting where an ad chases you around the Web, often for something you just bought or decided not to buy. We keep user data out of our cloud Brave Vault by default. It’s better for you and us that we don’t store any of your data without your permission.</p>
+                    <p>
+                    Thus we are a browser-based ad-tech platform, with high precision and privacy. What’s more, we aim to solve the Principal-Agent problem wherever it arises. Brave is the only approach to the Web that puts users first in ownership and control of their browsing data by blocking trackers by default, with no exceptions. The same could apply to other kinds of data, and with your help, we hope to grow big enough to serve users’ interests above all others’.</p>
+                    <p>
+                    In evolving systems like the Web, many players get stuck optimizing locally, no matter how much they think globally. Ad blockers may hope for better ads, but so far they seem to be having little effect. Publishers trying ad-blocker blockers may get a few local wins, but that path is an arms race. Brave brings innovation to bear across the whole Web system.</p>
+                    <p>
+                    <strong>Join us. With your help, we can fix the Web.</strong>
+                    </p>
 
 
 
@@ -654,119 +656,132 @@ In evolving systems like the Web, many players get stuck optimizing locally, no 
 </section>
     <!-- End About Section -->
 
-
-
-
-<!--=== Footer v5 ===-->
-<section id="contact">
-    <div id="footer-v5" class="footer-v5">
+ <!--=== Footer v1 ===-->
+ <section id="contact">
+    <div id="footer-v1" class="footer-v1">
         <div class="footer">
             <div class="container">
                 <div class="row">
-                    <!-- About Us -->
-                    <div class="col-md-5 sm-margin-bottom-40">
-                        <div class="heading-footer"><h2>Contact Us</h2></div>
-                        <div class="col-md-4">
-                            <p>Press Inquiries</p><a href="mailto:press@brave.com?subject=Brave Press Inquiry">press@brave.com</a> 
-                            </div>
-                        <div class="col-md-4">
-                            <p>Support Inquiries</p><a href="mailto:support@brave.com?subject=Question for Brave Support">support@brave.com</a> 
-                            </div>
-                        <div class="col-md-4">
-                            <p>Say "Hi" on Twitter</p><a href="https://www.twitter.com/brave" target="_blank">twitter.com/brave</a> 
-                            </div>
-<!--                        <div class="row"><ul class="list-inline dark-social-v2">-->
-<!--
-                            <li><a href="https://www.facebook.com/bravesoftware"><i class="rounded-sm fa fa-facebook"></i></a></li>
-                            <li><a href="https://www.twitter.com/brave"><i class="rounded-sm fa fa-twitter"></i></a></li>
--->
-<!--                            <li><a href="#"><i class="rounded-sm fa fa-google-plus"></i></a></li>-->
-<!--
-                            <li><a href="#"><i class="rounded-sm fa fa-instagram"></i></a></li>
-                            <li><a href="#"><i class="rounded-sm fa fa-tumblr"></i></a></li>
-                            <li><a href="#"><i class="rounded-sm fa fa-pinterest"></i></a></li>
--->
-<!--                            </ul></div>-->
+                    <!-- About -->
+                    <div class="col-md-3 md-margin-bottom-40">
+                        <a href="index.html"><img id="logo-footer" class="footer-logo" src="assets/img/logo1.png" alt=""></a>
+                        <p><BR><BR><BR>The new Brave browser blocks all the greed and ugliness on the Web that slows you down and invades your privacy. Then we put clean ads back, to fund website owners and Brave users alike. Users can spend their funds to go ad-free on their favorite sites. </p>
                     </div>
-                    <!-- End About Us -->
 
+                    <!-- End About -->
 
-                    <!-- Recent News -->
-                    <div class="col-md-3 sm-margin-bottom-40">
-                        <div class="heading-footer"><h2>Recent News</h2></div>
-                        <ul class="list-unstyled link-news">
-                            <li>
-                                <a href="#">Brave Announces Future Products</a>
-                                <small>Janurary 20, 2016</small>
-                            </li>
-<!--
-                            <li>
-                                <a href="#">Brave Announces Future Products</a>
-                                <small>Janurary 20, 2016</small>
-                            </li>
-                             <li>
-                                <a href="#">Brave Announces Future Products</a>
-                                <small>Janurary 20, 2016</small>
-                            </li>
--->
-                        </ul>
+                    <!-- Latest -->
+                    <div class="col-md-3 md-margin-bottom-40">
+                        <div class="posts">
+                            <div class="headline"><h2>Recent News</h2></div>
+                            <ul class="list-unstyled latest-list">
+                                <li><small>January 20, 2016</small><BR>
+                                    <a href="http://www.forbes.com/sites/roberthof/2016/01/20/brave-softwares-new-browser-nukes-ads-that-track-you/#2715e4857a0b630d5bad76b9" target="_blank"><p>Brave Software's New Browser Nukes Ads That Track You</p></a><BR>
+                                    
+                                </li>
+                                <li><small>January 20, 2016</small><BR>
+                                    <a href="http://techcrunch.com/2016/01/20/with-brave-software-javascripts-inventor-is-building-a-browser-for-the-ad-blocked-future/" target="_blank"><p>With Brave Software, JavaScript’s Creator Is Building A Browser For The Ad-Blocked Future</p></a><BR>
+                                  
+                                </li>
+                                <li><small>January 20, 2016</small><BR>
+                                    <a href="http://www.mediapost.com/publications/article/267089/new-browser-offers-brave-solution-to-ad-blocking.html" target="_blank"><p>New Browser Offers 'Brave' Solution To Ad Blocking, Literally: Will Cut Users And Publishers In</p></a>
+                       
+                                </li>
+                            </ul>
+                        </div>
                     </div>
-                    <!-- End Recent News -->
+                    <!-- End Latest -->
 
-                    <!-- Recent Blog Entries -->
-<!--
-                    <div class="col-md-3 sm-margin-bottom-40">
-                        <div class="heading-footer"><h2>Recent Blog Entries</h2></div>
-                        <ul class="list-unstyled thumb-news">
-                            <li>
-                                <img class="radius-3x" src="assets/img/thumb/01.jpg" alt="">
-                                <div class="overflow-h">
-                                    <a href="#">Praesent ut consectetur diam.</a>
-                                    <small>12 June, 2014</small>
-                                </div>
-                            </li>
-                            <li>
-                                <img class="radius-3x" src="assets/img/thumb/02.jpg" alt="">
-                                <div class="overflow-h">
-                                    <a href="#">Maecenas pharetra tellus et fringilla.</a>
-                                    <small>12 June, 2014</small>
-                                </div>
-                            </li>
-                        </ul>
+                    <!-- Link List -->
+                    <div class="col-md-3 md-margin-bottom-40">
+                                                <div class="posts">
+                        <div class="headline"><h2> <BR></h2></div>
+                            <ul class="list-unstyled latest-list">
+                             <li><small>January 20, 2016</small><BR>
+                                    <a href="http://www.businessinsider.com/former-mozilla-ceo-brendan-eich-launches-ad-blocking-web-browser-brave-2016-1?r=UK&IR=T" target="_blank"><p>The former CEO of Mozilla is launching a web browser that blocks all ads by default</p></a><BR>
+                                    
+                                </li>
+                                <li><small>January 20, 2016</small><BR>
+                                    <a href="http://www.cnet.com/news/ex-mozilla-ceo-try-braves-new-browser-for-a-faster-private-web/" target="_blank"><p>Brave browser promises faster Web by banishing intrusive ads</p></a><BR>
+                                  
+                                </li>
+                                <li><small>January 20, 2016</small><BR>
+                                    <a href="http://venturebeat.com/2016/01/20/brave-browser/" target="_blank"><p>Mozilla cofounder Brendan Eich’s startup, Brave, launches browser for Mac, Windows, iOS, Android</p></a>
+                       
+                                </li>
+                            </ul>
+                                    
+                    
                     </div>
--->
-                    <!-- End Recent Blog Entries -->
+                                     </div>
+                    <!-- End Link List -->
 
-                    <div class="col-md-3">
-                        
-                        <!--<div class="heading-footer"><h2>Stay in Touch</h2></div>
+                    <!-- Address -->
+                    <div class="col-md-3 map-img md-margin-bottom-40">
+                        <div class="headline"><h2>Contact Us</h2></div>
+                        <address class="md-margin-bottom-40">
+                            1161 Mission St. STE 113<BR>
+                            San Francisco, CA 94103 <br /><BR>
+                            Press Contacts: <a href="mailto:press@brave.com" >press@brave.com</a><BR>
+                            Support: <a href="mailto:support@brave.com" >support@brave.com</a><BR>
+                            Twitter: <a href="https://twitter.com/brave" target="_blank">twitter.com/brave</a>
+                        </address>
 
-                        <p>Keep me in the loop...</p>
-                        -->
- 
+                        <script type="text/javascript" src="https://form.jotform.com/jsform/60195600795156"></script>
                     </div>
+                              
+                    
+                    <!-- End Address -->
                 </div>
-            </div><!--/container -->
-        </div>
-    </div>
+            </div>
+        </div><!--/footer-->
 
-    <div class="copyright">
-        <div class="container">
-            <ul class="list-inline terms-menu">
-                <li class="silver"> © 2016 Brave Software Inc. All Rights Reserved. </li>
-                <li><a href="javascript:alert('Coming later today!')">Terms of Use</a></li>
-                <li><a href="javascript:alert('Coming later today!')">Privacy and Policy</a></li>
+        <div class="copyright">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-8">
+                        <p>
+                           © 2016 Brave Software Inc. All Rights Reserved.
+                           <a href="#" onclick="alert('Pending Final Approval')">Privacy Policy</a> | <a href="#" onclick="alert('Pending Final Approval')">Terms of Use</a> | <a href="FAQ.html">FAQ</a>
+                        </p>
+                    </div>
+
+   
+                    
+                    <!-- Social Links -->
+                    <div class="col-md-4">
+                        <ul class="footer-socials list-inline">
+                            <li>
+                                <a href="https://www.facebook.com/BraveSoftware/" target="_blank" class="tooltips" data-toggle="tooltip" data-placement="top" title="" data-original-title="Facebook">
+                                    <i class="fa fa-facebook"></i>
+                                </a>
+                            </li>
 <!--
-                <li><a href="#">License</a></li>
-                <li><a href="#">Support</a></li>
+                            <li>
+                                <a href="#" class="tooltips" data-toggle="tooltip" data-placement="top" title="" data-original-title="Google Plus">
+                                    <i class="fa fa-google-plus"></i>
+                                </a>
+                            </li>
 -->
-            </ul>
-        </div>
+                            <li>
+                                <a href="https://twitter.com/brave" target="_blank" class="tooltips" data-toggle="tooltip" data-placement="top" title="" data-original-title="Twitter">
+                                    <i class="fa fa-twitter"></i>
+                                </a>
+                            </li>
+                                <!-- </a> -->
+                            <!-- </li> -->
+                        </ul>
+                    </div>
+                    <!-- End Social Links -->
+                </div>
+            </div>
+        </div><!--/copyright-->
     </div>
-</section>
-    <!--=== End Footer v5 ===-->
+    <!--=== End Footer v1 ===-->
+<section>
 
-    <!-- Mailchimp Subscription Bootstrap Modals -->
+
+    <!-- Jotform Subscription Bootstrap Modal -->
     <div class="modal fade" id="mailchimpModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
         <div class="modal-dialog" role="document">
             <div class="modal-content">
@@ -775,7 +790,6 @@ In evolving systems like the Web, many players get stuck optimizing locally, no 
                     <h4 class="modal-title" id="myModalLabel">Join Us on Brave</h4>
                 </div>
                 <div class="modal-body">
-                    <p style="margin: 0;padding: 0;">You are now in the queue for Brave! We have a waitlist but will send you a download link soon.</p>
                     <script type="text/javascript" src="https://form.jotform.com/jsform/60194867956169"></script>
                 </div>
             </div>
@@ -836,6 +850,16 @@ In evolving systems like the Web, many players get stuck optimizing locally, no 
     <script src="assets/js/plugins/cube-portfolio/cube-portfolio-lightbox.js"></script>
     <script src="assets/js/plugins/layer-slider.js"></script>
     <script>
+        function showSmallLogo() {
+            if (jQuery(document.body).width() > 976) {
+                jQuery('#brave-logo').height(40)
+            }
+        }
+        function showOrigLogo() {
+            if (jQuery(document.body).width() > 976) {
+                jQuery('#brave-logo').height(76)
+            }
+        }
         jQuery(document).ready(function() {
             App.init();
 //            App.initCounter();
@@ -846,16 +870,23 @@ In evolving systems like the Web, many players get stuck optimizing locally, no 
 //                gridContainer.cubeportfolio();
                 LayerSlider.initLayerSlider();
             if (window.location.hash && window.location.hash !== '#body') {
-                jQuery('.logo').hide();
+                showSmallLogo()
             }
         });
         window.onhashchange = function() {
             if (window.location.hash && window.location.hash !== '#body') {
-                jQuery('.logo').hide();
+                showSmallLogo()
             } else {
-                jQuery('.logo').show();
+                showOrigLogo()
             }
-        }
+        };
+        window.onscroll = function() {
+            if (window.document.body.scrollTop === 0) {
+                showOrigLogo()
+            } else {
+                showSmallLogo()
+            }
+        };
     </script>
     <!--[if lt IE 9]>
         <script src="assets/plugins/respond.js"></script>

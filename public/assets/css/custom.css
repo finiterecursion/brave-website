@@ -27,5 +27,17 @@
 	}
 }
 
-/* mailchimp signup */
-#mc_embed_signup_slider{background:#fff; clear:left; font:14px Helvetica,Arial,sans-serif; }
+/* menu modifications */
+@media (max-width:990px) {
+	#fullsize-menu {
+		clear: left;
+		margin-left:72px;
+	}
+}
+@media (min-width:990px) {
+	.brave-nav {
+		position:absolute; 
+		bottom:0px; 
+		right:40px;
+	}
+}
