@@ -71,7 +71,7 @@ The data-spy and data-target are part of the built-in Bootstrap scrollspy functi
 
                              <!-- Logo -->
 <a class="logo" href="#">
-             <img src="assets/img/brave_logo_big2.png" alt="Logo">
+             <img id="brave-logo" src="assets/img/brave_logo_big2.png" alt="Logo" style="float: left; padding-left:120px">
             </a>
 <!-- End Logo -->
 
@@ -79,7 +79,7 @@ The data-spy and data-target are part of the built-in Bootstrap scrollspy functi
             <!-- Collect the nav links, forms, and other content for toggling -->
             <div id="fullsize-menu" class="collapse navbar-collapse navbar-ex1-collapse">
                 <div class="menu-container">
-                    <ul class="nav navbar-nav">
+                    <ul class="nav navbar-nav" style="position:absolute; bottom:0px; right:40px">
                         <li class="home">
                             <a href="#body">Introducing Brave</a>
                         </li>
@@ -844,6 +844,12 @@ The data-spy and data-target are part of the built-in Bootstrap scrollspy functi
     <script src="assets/js/plugins/cube-portfolio/cube-portfolio-lightbox.js"></script>
     <script src="assets/js/plugins/layer-slider.js"></script>
     <script>
+        function showSmallLogo() {
+            jQuery('#brave-logo').height(40)
+        }
+        function showOrigLogo() {
+            jQuery('#brave-logo').height(76)
+        }
         jQuery(document).ready(function() {
             App.init();
 //            App.initCounter();
@@ -854,23 +860,21 @@ The data-spy and data-target are part of the built-in Bootstrap scrollspy functi
 //                gridContainer.cubeportfolio();
                 LayerSlider.initLayerSlider();
             if (window.location.hash && window.location.hash !== '#body') {
-                jQuery('.logo').hide();
+                showSmallLogo()
             }
         });
         window.onhashchange = function() {
             if (window.location.hash && window.location.hash !== '#body') {
-                jQuery('.logo').hide();
+                showSmallLogo()
             } else {
-                jQuery('.logo').show();
+                showOrigLogo()
             }
         };
         window.onscroll = function() {
             if (window.document.body.scrollTop === 0) {
-                jQuery('.logo').show();
-                return;
-            }
-            if (jQuery('.logo').is(':visible')) {
-                jQuery('.logo').hide();
+                showOrigLogo()
+            } else {
+                showSmallLogo()
             }
         };
     </script>
