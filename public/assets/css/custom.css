@@ -41,6 +41,8 @@
 		right:40px;
 	}
 }
-.navbar-toggle {
-	color: #fff;
-}
+
+/*button.navbar-toggle, button.navbar-toggle span {
+	color: #fff!important;
+	border-color: #fff !important;
+}*/
