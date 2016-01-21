@@ -270,14 +270,6 @@ a:hover {
   }
 }
 
-@media (max-width: 600px) {
-  /*Responsive code for max-width: 600px*/
-  .one-page-header .navbar-collapse.collapse {
-    display: none !important;
-      background-color: transparent;
-  }
-}
-
 /*Navbar*/
 @media (min-width: 992px) {
   .one-page-header.navbar .navbar-nav {
