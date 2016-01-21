@@ -99,6 +99,9 @@ a:hover {
 }
 
 /*Navbar Logo*/
+.logo img {
+  padding-left: 15px !important;
+}
 .one-page-header .navbar-brand {
   font-size: 1px;
   font-weight: 20;
@@ -117,8 +120,8 @@ a:hover {
     padding-left: 100;
   }
 }
-@media (max-width: 600px) {
-  body {
+@media (max-width: 600px) { 
+  section {
     margin-top: 82px;
   }
   .one-page-header {
