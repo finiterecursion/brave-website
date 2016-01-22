@@ -50,6 +50,9 @@
 
     <!-- CSS Customization -->
     <link rel="stylesheet" href="assets/css/custom.css">
+
+    <!-- Extra per-page stylesheets -->
+    
 </head>
 
 <!--
@@ -70,8 +73,8 @@ The data-spy and data-target are part of the built-in Bootstrap scrollspy functi
 
 
                              <!-- Logo -->
-<a class="logo" href="index.html">
-             <img id="brave-logo" src="assets/img/brave_logo_big2.png" alt="Logo" style="float: left; padding-left:120px">
+            <a class="logo" href="index.html">
+                <img id="brave-logo" src="assets/img/brave_logo_big2.png" alt="Logo" style="float: left; padding-left:10%">
             </a>
 <!-- End Logo -->
 
@@ -79,9 +82,9 @@ The data-spy and data-target are part of the built-in Bootstrap scrollspy functi
             <!-- Collect the nav links, forms, and other content for toggling -->
             <div id="fullsize-menu" class="collapse navbar-collapse navbar-ex1-collapse">
                 <div class="menu-container">
-                    <ul class="nav navbar-nav" style="position:absolute; bottom:0px; right:40px">
-                     <li class="home">
-                            <a href="index.html">Introducing Brave</a>
+                    <ul class="nav navbar-nav brave-nav" style="">
+                        <li class="home">
+                            <a href="index.html#body">Introducing Brave</a>
                         </li>
                         <li>
                             <a href="index.html#faster">Faster</a>
@@ -93,7 +96,6 @@ The data-spy and data-target are part of the built-in Bootstrap scrollspy functi
                          <li>
                             <a href="index.html#devs">Developers</a>
                         </li>
-                        
                         <li>
                             <a href="index.html#team">Team</a>
 
@@ -102,9 +104,13 @@ The data-spy and data-target are part of the built-in Bootstrap scrollspy functi
                             <a href="index.html#about">About</a>
 
                         </li>
+                        <li>
+                            <a href="FAQ.html">FAQ</a>
+
+                        </li>
 
                         <li>
-                            <a href="index.html#contact">Contact</a>
+                            <a href="#contact">Contact</a>
                         </li>
 
 
@@ -119,9 +125,8 @@ The data-spy and data-target are part of the built-in Bootstrap scrollspy functi
     </nav>
     <!--=== End Header ===-->
 
-
-
-  
+    <!--=== Main content ===-->
+    
     <div class="container content-md">
         <div class="row">
             <div class="col-sm-1 sm-margin-top-80 sm-margin-bottom-20">
@@ -130,7 +135,6 @@ The data-spy and data-target are part of the built-in Bootstrap scrollspy functi
                 <div class="news-v3-in-sm ">
 <BR><BR><BR>
 
-    
 <H2>Terms of Use</H2>
 <P>
 
@@ -141,7 +145,10 @@ The data-spy and data-target are part of the built-in Bootstrap scrollspy functi
         </div>
     </div>
 
+    <!--=== End main content ===-->
+
  <!--=== Footer v1 ===-->
+ <section id="brave-footer">
     <div id="footer-v1" class="footer-v1">
         <div class="footer">
             <div class="container">
@@ -201,19 +208,37 @@ The data-spy and data-target are part of the built-in Bootstrap scrollspy functi
                     <!-- End Link List -->
 
                     <!-- Address -->
-                    <div class="col-md-3 map-img md-margin-bottom-40">
-                        <div class="headline"><h2>Contact Us</h2></div>
-                        <address class="md-margin-bottom-40">
-                            1161 Mission St. STE 113<BR>
-                            San Francisco, CA 94103 <br /><BR>
-                            Press Contacts: <a href="mailto:press@brave.com" >press@brave.com</a><BR>
-                            Support: <a href="mailto:support@brave.com" >support@brave.com</a><BR>
-                            Twitter: <a href="https://twitter.com/brave" target="_blank">twitter.com/brave</a>
-                        </address>
+                    <section id="contact">
+                        <div class="col-md-3 map-img md-margin-bottom-40">
+                            <div class="headline"><h2>Contact Us</h2></div>
+                            <address class="md-margin-bottom-40">
+                                1161 Mission St. STE 113<BR>
+                                San Francisco, CA 94103 <br /><BR>
+                                Press Contacts: <a href="mailto:press@brave.com" >press@brave.com</a><BR>
+                                Support: <a href="mailto:support@brave.com" >support@brave.com</a><BR>
+                                Twitter: <a href="https://twitter.com/brave" target="_blank">twitter.com/brave</a>
+                            </address>
 
-                        <h5>Stay In Touch</h5>
-                        <script type="text/javascript" src="https://form.jotform.com/jsform/60195600795156"></script>
-                    </div>
+                            
+
+<!-- JotForm embedded version -->
+<form class="jotform-form" action="https://submit.jotform.us/submit/60207375294153/" method="post" name="form_60207375294153" id="60207375294153" accept-charset="utf-8" target="_blank">
+  <input name="formID" value="60207375294153" type="hidden">
+          <input placeholder="your@email.address" class=" form-textbox validate[Email]" id="input_1" name="q1_input1" style="width: 180px" value="" type="email" required aria-required="true">
+            <button id="input_2" type="submit" class="btn-u btn-u-black ls-s-1" style="width: 180px;margin-top: 9px">
+              Stay In Touch
+            </button>
+  <input id="simple_spc" name="simple_spc" value="60207375294153-60207375294153" type="hidden">
+  <script type="text/javascript">
+  document.getElementById("si" + "mple" + "_spc").value = "60207375294153-60207375294153";
+  </script>
+<input value="1453425133660_60207375294153_f66GtFt" name="event_id" type="hidden"></form>
+
+
+
+
+                        </div>
+                    </section>
                               
                     
                     <!-- End Address -->
@@ -227,7 +252,7 @@ The data-spy and data-target are part of the built-in Bootstrap scrollspy functi
                     <div class="col-md-8">
                         <p>
                            © 2016 Brave Software Inc. All Rights Reserved.
-                           <a href="privacypolicy.html">Privacy Policy</a> | <a href="termsofuse.html">Terms of Use</a>
+                           <a href="#" onclick="alert('Pending Final Approval')">Privacy Policy</a> | <a href="#" onclick="alert('Pending Final Approval')">Terms of Use</a> | <a href="FAQ.html">FAQ</a>
                         </p>
                     </div>
 
@@ -263,7 +288,7 @@ The data-spy and data-target are part of the built-in Bootstrap scrollspy functi
         </div><!--/copyright-->
     </div>
     <!--=== End Footer v1 ===-->
-
+<section>
 
 
     <!-- Jotform Subscription Bootstrap Modal -->
@@ -275,7 +300,62 @@ The data-spy and data-target are part of the built-in Bootstrap scrollspy functi
                     <h4 class="modal-title" id="myModalLabel">Join Us on Brave</h4>
                 </div>
                 <div class="modal-body">
-                    <script type="text/javascript" src="https://form.jotform.com/jsform/60194867956169"></script>
+
+
+
+<form class="form-horizontal" action="https://submit.jotform.us/submit/60194867956169/" method="post" name="form_60194867956169" id="60194867956169" accept-charset="utf-8" target="_blank" onsubmit="location.reload()">
+  <input name="formID" value="60194867956169" type="hidden">
+  <div class="form-group">
+    <label for="inputName" class="col-sm-2 control-label">Name</label>
+    <div class="col-sm-10">
+      <input name="q6_name" type="text" class="form-control" id="inputName" placeholder="Name">
+    </div>
+  </div>
+  <div class="form-group">
+    <label for="inputEmail" class="col-sm-2 control-label">Email</label>
+    <div class="col-sm-10">
+      <input name="q4_email" type="email" class="form-control" id="inputEmail" placeholder="Email" required aria-required="true">
+    </div>
+  </div>
+  <div class="form-group">
+    <div class="col-sm-offset-2 col-sm-10">
+      <div class="checkbox">
+        <label>
+          <input class="form-checkbox" id="input_5_0" name="q5_operatingSystems[]" value="Android" type="checkbox"> Android
+        </label>
+      </div>
+      <div class="checkbox">
+        <label>
+          <input class="form-checkbox" id="input_5_1" name="q5_operatingSystems[]" value="iOS" type="checkbox"> iOS
+        </label>
+      </div>
+      <div class="checkbox">
+        <label>
+          <input class="form-checkbox" id="input_5_2" name="q5_operatingSystems[]" value="OS X (Mac)" type="checkbox"> OS X (Mac)
+        </label>
+      </div>
+      <div class="checkbox">
+        <label>
+          <input class="form-checkbox" id="input_5_3" name="q5_operatingSystems[]" value="Windows" type="checkbox"> Windows
+        </label>
+      </div>
+    </div>
+  </div>
+  <div class="form-group">
+    <div class="col-sm-offset-2 col-sm-10">
+      <button type="submit" class="btn btn-default">Submit</button>
+    </div>
+  </div>
+  <input id="simple_spc" name="simple_spc" value="60194867956169-60194867956169" type="hidden">
+  <script type="text/javascript">
+  document.getElementById("si" + "mple" + "_spc").value = "60194867956169-60194867956169";
+  </script>
+  <input value="1453431916271_60194867956169_0WLVSv5" name="event_id" type="hidden">
+</form>
+
+
+
+
                 </div>
             </div>
         </div>
@@ -366,7 +446,7 @@ The data-spy and data-target are part of the built-in Bootstrap scrollspy functi
             }
         };
         window.onscroll = function() {
-            if (window.document.body.scrollTop === 0) {
+            if (window.pageYOffset === 0) {
                 showOrigLogo()
             } else {
                 showSmallLogo()

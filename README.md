@@ -7,6 +7,15 @@ Clone the repo: `git clone git@github.com:brave/brave-website.git`
 
 Install dependencies with `npm install`
 
+Install staticjinja with `pip install staticjinja`
+
+## Building
+
+```
+cd public
+staticjinja build
+```
+
 
 ## Running
 
