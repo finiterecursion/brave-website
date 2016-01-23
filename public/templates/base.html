@@ -1,0 +1,451 @@
+<!DOCTYPE html>
+<!--[if IE 8]> <html lang="en" class="ie8"> <![endif]-->
+<!--[if IE 9]> <html lang="en" class="ie9"> <![endif]-->
+<!--[if !IE]><!--> <html lang="en"> <!--<![endif]-->
+<head>
+    <title>{% block title %}{% endblock %}</title>
+
+    <!-- Meta -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <!-- Chartbeat -->
+    <script type="text/javascript">var _sf_startpt=(new Date()).getTime()</script>
+
+    <!-- Favicon -->
+    <link rel="shortcut icon" href="favicon.ico">
+
+    <!-- Web Fonts -->
+    <link rel='stylesheet' type='text/css' href='//fonts.googleapis.com/css?family=Open+Sans:400,300,600&amp;subset=cyrillic,latin'>
+    <link rel='stylesheet' type='text/css' href='//fonts.googleapis.com/css?family=Source+Sans+Pro'>
+
+    <!-- CSS Global Compulsory -->
+    <link rel="stylesheet" href="assets/plugins/bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="assets/css/one.style.css">
+
+    <!-- CSS Footer -->
+    <link rel="stylesheet" href="assets/css/footers/footer-v7.css">
+    <link rel="stylesheet" href="assets/css/footers/footer-v5.css">
+    <link rel="stylesheet" href="assets/css/footers/footer-v1.css">
+
+    <!-- CSS Implementing Plugins -->
+    <link rel="stylesheet" href="assets/plugins/animate.css">
+    <link rel="stylesheet" href="assets/plugins/line-icons/line-icons.css">
+    <link rel="stylesheet" href="assets/plugins/font-awesome/css/font-awesome.min.css">
+    <link rel="stylesheet" href="assets/plugins/pace/pace-flash.css">
+    <link rel="stylesheet" href="assets/plugins/owl-carousel/owl.carousel.css">
+    <link rel="stylesheet" href="assets/plugins/cube-portfolio/cubeportfolio/css/cubeportfolio.min.css">
+    <link rel="stylesheet" href="assets/plugins/cube-portfolio/cubeportfolio/custom/custom-cubeportfolio.css">
+    <link rel="stylesheet" href="assets/plugins/revolution-slider/rs-plugin/css/settings.css">
+    <link rel="stylesheet" href="assets/plugins/layer-slider/layerslider/css/layerslider.css">
+    <!--[if lt IE 9]><link rel="stylesheet" href="assets/plugins/revolution-slider/rs-plugin/css/settings-ie8.css" type="text/css" media="screen"><![endif]-->
+
+    <!-- Style Switcher -->
+    <link rel="stylesheet" href="assets/css/plugins/style-switcher.css">
+
+    <!-- CSS Theme -->
+    <link rel="stylesheet" href="assets/css/theme-colors/orange.css" id="style_color">
+
+    <!-- CSS Customization -->
+    <link rel="stylesheet" href="assets/css/custom.css">
+
+    <!-- Extra per-page stylesheets -->
+    {% block stylesheets %}{% endblock %}
+</head>
+
+<!--
+The #page-top ID is part of the scrolling feature.
+The data-spy and data-target are part of the built-in Bootstrap scrollspy function.
+-->
+<body id="body" data-spy="scroll" data-target=".one-page-header" class="demo-lightbox-gallery">
+    <!--=== Header ===-->
+    <nav class="one-page-header navbar navbar-default navbar-fixed-top" role="navigation">
+        <div class="container">
+            <div class="menu-container">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-ex1-collapse">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+
+
+                             <!-- Logo -->
+            <a class="logo" href="index.html">
+                <img id="brave-logo" src="assets/img/brave_logo_big2.png" alt="Logo" style="float: left; padding-left:10%">
+            </a>
+<!-- End Logo -->
+
+
+            <!-- Collect the nav links, forms, and other content for toggling -->
+            <div id="fullsize-menu" class="collapse navbar-collapse navbar-ex1-collapse">
+                <div class="menu-container">
+                    <ul class="nav navbar-nav brave-nav" style="">
+                        {% block navMenu %}
+                        <li class="home">
+                            <a href="index.html#body">Introducing Brave</a>
+                        </li>
+                        <li>
+                            <a href="index.html#faster">Faster</a>
+                        </li>
+                        <li>
+                            <a href="index.html#safer">Safer</a>
+                        </li>
+
+                         <li>
+                            <a href="index.html#devs">Developers</a>
+                        </li>
+                        <li>
+                            <a href="index.html#team">Team</a>
+
+                        </li>
+                          <li>
+                            <a href="index.html#about">About</a>
+
+                        </li>
+                        {% endblock %}
+                        <li>
+                            <a href="FAQ.html">FAQ</a>
+
+                        </li>
+
+                        <li>
+                            <a href="#contact">Contact</a>
+                        </li>
+
+
+                    </ul>
+                </div>
+            </div>
+            <!-- /.navbar-collapse -->
+            </div>
+
+        </div>
+        <!-- /.container -->
+    </nav>
+    <!--=== End Header ===-->
+
+    <!--=== Main content ===-->
+    {% block mainContent %}{% endblock %}
+    <!--=== End main content ===-->
+
+ <!--=== Footer v1 ===-->
+ <section id="brave-footer">
+    <div id="footer-v1" class="footer-v1">
+        <div class="footer">
+            <div class="container">
+                <div class="row">
+                    <!-- About -->
+                    <div class="col-md-3 md-margin-bottom-40">
+                        <a href="index.html"><img id="logo-footer" class="footer-logo" src="assets/img/logo1.png" alt=""></a>
+                        <p><BR><BR><BR>The new Brave browser blocks all the greed and ugliness on the Web that slows you down and invades your privacy. Then we put clean ads back, to fund website owners and Brave users alike. Users can spend their funds to go ad-free on their favorite sites. </p>
+                    </div>
+
+                    <!-- End About -->
+
+                    <!-- Latest -->
+                    <div class="col-md-3 md-margin-bottom-40">
+                        <div class="posts">
+                            <div class="headline"><h2>Recent News</h2></div>
+                            <ul class="list-unstyled latest-list">
+                                <li><small>January 20, 2016</small><BR>
+                                    <a href="http://www.forbes.com/sites/roberthof/2016/01/20/brave-softwares-new-browser-nukes-ads-that-track-you/#2715e4857a0b630d5bad76b9" target="_blank"><p>Brave Software's New Browser Nukes Ads That Track You</p></a><BR>
+                                    
+                                </li>
+                                <li><small>January 20, 2016</small><BR>
+                                    <a href="http://techcrunch.com/2016/01/20/with-brave-software-javascripts-inventor-is-building-a-browser-for-the-ad-blocked-future/" target="_blank"><p>With Brave Software, JavaScript’s Creator Is Building A Browser For The Ad-Blocked Future</p></a><BR>
+                                  
+                                </li>
+                                <li><small>January 20, 2016</small><BR>
+                                    <a href="http://www.mediapost.com/publications/article/267089/new-browser-offers-brave-solution-to-ad-blocking.html" target="_blank"><p>New Browser Offers 'Brave' Solution To Ad Blocking, Literally: Will Cut Users And Publishers In</p></a>
+                       
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <!-- End Latest -->
+
+                    <!-- Link List -->
+                    <div class="col-md-3 md-margin-bottom-40">
+                                                <div class="posts">
+                        <div class="headline"><h2> <BR></h2></div>
+                            <ul class="list-unstyled latest-list">
+                             <li><small>January 20, 2016</small><BR>
+                                    <a href="http://www.businessinsider.com/former-mozilla-ceo-brendan-eich-launches-ad-blocking-web-browser-brave-2016-1?r=UK&IR=T" target="_blank"><p>The former CEO of Mozilla is launching a web browser that blocks all ads by default</p></a><BR>
+                                    
+                                </li>
+                                <li><small>January 20, 2016</small><BR>
+                                    <a href="http://www.cnet.com/news/ex-mozilla-ceo-try-braves-new-browser-for-a-faster-private-web/" target="_blank"><p>Brave browser promises faster Web by banishing intrusive ads</p></a><BR>
+                                  
+                                </li>
+                                <li><small>January 20, 2016</small><BR>
+                                    <a href="http://venturebeat.com/2016/01/20/brave-browser/" target="_blank"><p>Mozilla cofounder Brendan Eich’s startup, Brave, launches browser for Mac, Windows, iOS, Android</p></a>
+                       
+                                </li>
+                            </ul>
+                                    
+                    
+                    </div>
+                                     </div>
+                    <!-- End Link List -->
+
+                    <!-- Address -->
+                    <section id="contact">
+                        <div class="col-md-3 map-img md-margin-bottom-40">
+                            <div class="headline"><h2>Contact Us</h2></div>
+                            <address class="md-margin-bottom-40">
+                                1161 Mission St. STE 113<BR>
+                                San Francisco, CA 94103 <br /><BR>
+                                Press Contacts: <a href="mailto:press@brave.com" >press@brave.com</a><BR>
+                                Support: <a href="mailto:support@brave.com" >support@brave.com</a><BR>
+                                Twitter: <a href="https://twitter.com/brave" target="_blank">twitter.com/brave</a>
+                            </address>
+
+                            
+
+<!-- JotForm embedded version -->
+<form class="jotform-form" action="https://submit.jotform.us/submit/60207375294153/" method="post" name="form_60207375294153" id="60207375294153" accept-charset="utf-8" target="_blank">
+  <input name="formID" value="60207375294153" type="hidden">
+          <input placeholder="your@email.address" class=" form-textbox validate[Email]" id="input_1" name="q1_input1" style="width: 180px" value="" type="email" required aria-required="true">
+            <button id="input_2" type="submit" class="btn-u btn-u-black ls-s-1" style="width: 180px;margin-top: 9px">
+              Stay In Touch
+            </button>
+  <input id="simple_spc" name="simple_spc" value="60207375294153-60207375294153" type="hidden">
+  <script type="text/javascript">
+  document.getElementById("si" + "mple" + "_spc").value = "60207375294153-60207375294153";
+  </script>
+<input value="1453425133660_60207375294153_f66GtFt" name="event_id" type="hidden"></form>
+
+
+
+
+                        </div>
+                    </section>
+                              
+                    
+                    <!-- End Address -->
+                </div>
+            </div>
+        </div><!--/footer-->
+
+        <div class="copyright">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-8">
+                        <p>
+                           © 2016 Brave Software Inc. All Rights Reserved.
+                           <a href="#" onclick="alert('Pending Final Approval')">Privacy Policy</a> | <a href="#" onclick="alert('Pending Final Approval')">Terms of Use</a> | <a href="FAQ.html">FAQ</a>
+                        </p>
+                    </div>
+
+   
+                    
+                    <!-- Social Links -->
+                    <div class="col-md-4">
+                        <ul class="footer-socials list-inline">
+                            <li>
+                                <a href="https://www.facebook.com/BraveSoftware/" target="_blank" class="tooltips" data-toggle="tooltip" data-placement="top" title="" data-original-title="Facebook">
+                                    <i class="fa fa-facebook"></i>
+                                </a>
+                            </li>
+<!--
+                            <li>
+                                <a href="#" class="tooltips" data-toggle="tooltip" data-placement="top" title="" data-original-title="Google Plus">
+                                    <i class="fa fa-google-plus"></i>
+                                </a>
+                            </li>
+-->
+                            <li>
+                                <a href="https://twitter.com/brave" target="_blank" class="tooltips" data-toggle="tooltip" data-placement="top" title="" data-original-title="Twitter">
+                                    <i class="fa fa-twitter"></i>
+                                </a>
+                            </li>
+                                <!-- </a> -->
+                            <!-- </li> -->
+                        </ul>
+                    </div>
+                    <!-- End Social Links -->
+                </div>
+            </div>
+        </div><!--/copyright-->
+    </div>
+    <!--=== End Footer v1 ===-->
+<section>
+
+
+    <!-- Jotform Subscription Bootstrap Modal -->
+    <div class="modal fade" id="mailchimpModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">×</span></button>
+                    <h4 class="modal-title" id="myModalLabel">Join Us on Brave</h4>
+                </div>
+                <div class="modal-body">
+
+
+
+<form class="form-horizontal" action="https://submit.jotform.us/submit/60194867956169/" method="post" name="form_60194867956169" id="60194867956169" accept-charset="utf-8" target="_blank" onsubmit="location.reload()">
+  <input name="formID" value="60194867956169" type="hidden">
+  <div class="form-group">
+    <label for="inputName" class="col-sm-2 control-label">Name</label>
+    <div class="col-sm-10">
+      <input name="q6_name" type="text" class="form-control" id="inputName" placeholder="Name">
+    </div>
+  </div>
+  <div class="form-group">
+    <label for="inputEmail" class="col-sm-2 control-label">Email</label>
+    <div class="col-sm-10">
+      <input name="q4_email" type="email" class="form-control" id="inputEmail" placeholder="Email" required aria-required="true">
+    </div>
+  </div>
+  <div class="form-group">
+    <div class="col-sm-offset-2 col-sm-10">
+      <div class="checkbox">
+        <label>
+          <input class="form-checkbox" id="input_5_0" name="q5_operatingSystems[]" value="Android" type="checkbox"> Android
+        </label>
+      </div>
+      <div class="checkbox">
+        <label>
+          <input class="form-checkbox" id="input_5_1" name="q5_operatingSystems[]" value="iOS" type="checkbox"> iOS
+        </label>
+      </div>
+      <div class="checkbox">
+        <label>
+          <input class="form-checkbox" id="input_5_2" name="q5_operatingSystems[]" value="OS X (Mac)" type="checkbox"> OS X (Mac)
+        </label>
+      </div>
+      <div class="checkbox">
+        <label>
+          <input class="form-checkbox" id="input_5_3" name="q5_operatingSystems[]" value="Windows" type="checkbox"> Windows
+        </label>
+      </div>
+    </div>
+  </div>
+  <div class="form-group">
+    <div class="col-sm-offset-2 col-sm-10">
+      <button type="submit" class="btn btn-default">Submit</button>
+    </div>
+  </div>
+  <input id="simple_spc" name="simple_spc" value="60194867956169-60194867956169" type="hidden">
+  <script type="text/javascript">
+  document.getElementById("si" + "mple" + "_spc").value = "60194867956169-60194867956169";
+  </script>
+  <input value="1453431916271_60194867956169_0WLVSv5" name="event_id" type="hidden">
+</form>
+
+
+
+
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+    <!-- JS Global Compulsory -->
+    <script src="assets/plugins/jquery/jquery.min.js"></script>
+    <script src="assets/plugins/jquery/jquery-migrate.min.js"></script>
+    <script src="assets/plugins/bootstrap/js/bootstrap.min.js"></script>
+    <!-- JS Implementing Plugins -->
+    <script src="assets/plugins/jquery.easing.min.js"></script>
+    <script src="assets/plugins/pace/pace.min.js"></script>
+    <script src="assets/plugins/jquery.parallax.js"></script>
+    <script src="assets/plugins/counter/waypoints.min.js"></script>
+    <script src="assets/plugins/counter/jquery.counterup.min.js"></script>
+    <script src="assets/plugins/owl-carousel/owl.carousel.js"></script>
+    <script src="assets/plugins/sky-forms-pro/skyforms/js/jquery.form.min.js"></script>
+    <script src="assets/plugins/sky-forms-pro/skyforms/js/jquery.validate.min.js"></script>
+    <script src="assets/plugins/revolution-slider/rs-plugin/js/jquery.themepunch.tools.min.js"></script>
+    <script src="assets/plugins/revolution-slider/rs-plugin/js/jquery.themepunch.revolution.min.js"></script>
+    <script src="assets/plugins/cube-portfolio/cubeportfolio/js/jquery.cubeportfolio.min.js"></script>
+    <script src="assets/plugins/owl-carousel/owl.carousel.js"></script>
+    <script src="assets/plugins/layer-slider/layerslider/js/greensock.js"></script>
+    <script src="assets/plugins/layer-slider/layerslider/js/layerslider.transitions.js"></script>
+    <script src="assets/plugins/layer-slider/layerslider/js/layerslider.kreaturamedia.jquery.js"></script>
+<!--
+    <script type="text/javascript" src="assets/plugins/horizontal-parallax/js/sequence.jquery-min.js"></script>
+    <script type="text/javascript" src="assets/plugins/horizontal-parallax/js/horizontal-parallax.js"></script>
+-->
+            <!-- Chartbeat -->
+            <script type="text/javascript">
+ var _sf_async_config = { uid: 62395, domain: 'brave.com', useCanonical: true };
+ (function() {
+   function loadChartbeat() {
+     window._sf_endpt = (new Date()).getTime();
+     var e = document.createElement('script');
+     e.setAttribute('language', 'javascript');
+     e.setAttribute('type', 'text/javascript');
+     e.setAttribute('src','//static.chartbeat.com/js/chartbeat.js');
+     document.body.appendChild(e);
+   };
+   var oldonload = window.onload;
+   window.onload = (typeof window.onload != 'function') ?
+     loadChartbeat : function() { oldonload(); loadChartbeat(); };
+ })();
+            </script>
+
+    <!-- JS Page Level-->
+    <script src="assets/js/one.app.js"></script>
+    <script src="assets/js/forms/login.js"></script>
+    <script src="assets/js/forms/contact.js"></script>
+    <script src="assets/js/plugins/pace-loader.js"></script>
+    <script src="assets/js/plugins/owl-carousel.js"></script>
+    <script src="assets/js/plugins/revolution-slider.js"></script>
+    <script src="assets/js/plugins/cube-portfolio/cube-portfolio-lightbox.js"></script>
+    <script src="assets/js/plugins/layer-slider.js"></script>
+    <script>
+        function showSmallLogo() {
+            if (jQuery(document.body).width() > 976) {
+                jQuery('#brave-logo').height(40)
+            }
+        }
+        function showOrigLogo() {
+            if (jQuery(document.body).width() > 976) {
+                jQuery('#brave-logo').height(76)
+            }
+        }
+        jQuery(document).ready(function() {
+            App.init();
+//            App.initCounter();
+//            App.initParallaxBg();
+//            LoginForm.initLoginForm();
+//            ContactForm.initContactForm();
+//            OwlCarousel.initOwlCarousel();
+//                gridContainer.cubeportfolio();
+                LayerSlider.initLayerSlider();
+            if (window.location.hash && window.location.hash !== '#body') {
+                showSmallLogo()
+            }
+        });
+        window.onhashchange = function() {
+            if (window.location.hash && window.location.hash !== '#body') {
+                showSmallLogo()
+            } else {
+                showOrigLogo()
+            }
+        };
+        window.onscroll = function() {
+            if (window.pageYOffset === 0) {
+                showOrigLogo()
+            } else {
+                showSmallLogo()
+            }
+        };
+    </script>
+    <!--[if lt IE 9]>
+        <script src="assets/plugins/respond.js"></script>
+        <script src="assets/plugins/html5shiv.js"></script>
+        <script src="assets/js/plugins/placeholder-IE-fixes.js"></script>
+        <script src="assets/plugins/sky-forms-pro/skyforms/js/sky-forms-ie8.js"></script>
+    <![endif]-->
+
+    <!--[if lt IE 10]>
+        <script src="assets/plugins/sky-forms-pro/skyforms/js/jquery.placeholder.min.js"></script>
+    <![endif]-->
+</body>
+</html>
