@@ -11,11 +11,9 @@ Install staticjinja with `pip install staticjinja`
 
 ## Building
 
-```
-cd public
-staticjinja build
-```
+`npm run build`
 
+If you've made changes, commit after building.
 
 ## Running
 
