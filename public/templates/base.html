@@ -83,6 +83,7 @@ The data-spy and data-target are part of the built-in Bootstrap scrollspy functi
             <div id="fullsize-menu" class="collapse navbar-collapse navbar-ex1-collapse">
                 <div class="menu-container">
                     <ul class="nav navbar-nav brave-nav" style="">
+                        {% block navMenu %}
                         <li class="home">
                             <a href="index.html#body">Introducing Brave</a>
                         </li>
@@ -104,6 +105,7 @@ The data-spy and data-target are part of the built-in Bootstrap scrollspy functi
                             <a href="index.html#about">About</a>
 
                         </li>
+                        {% endblock %}
                         <li>
                             <a href="FAQ.html">FAQ</a>
 
