@@ -1,5 +1,6 @@
 var Hapi = require('hapi')
 var assets = require('./assets.js')
+var mailchimp = require('./mailchimp.js') 
 
 var server = new Hapi.Server()
 server.connection({ port: process.env.PORT || 3000 })
@@ -18,6 +19,15 @@ server.register(require('inert'), err => {
       request.response.headers['Surrogate-Control'] = 'max-age=2592000'
     }
     reply(request.response)
+  })
+
+  // API handlers
+  server.route({
+    method: 'POST',
+    path: '/api/mailchimp',
+    handler: function (request, reply) {
+      mailchimp.api(request, reply)
+    }
   })
 
   // A server redirect to our favorite band, Brave Combo.
